@@ -7,6 +7,16 @@
 在终端运行：
 
 ```bash
+# 普通安装
+pip install -r requirements.txt
+
+# 如果遇到 PEP 668 错误（macOS Homebrew Python），使用：
+pip install --break-system-packages -r requirements.txt
+
+# 或者使用虚拟环境（推荐）
+python3 -m venv .venv
+source .venv/bin/activate  # macOS/Linux
+# .venv\Scripts\activate  # Windows
 pip install -r requirements.txt
 ```
 
