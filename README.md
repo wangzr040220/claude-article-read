@@ -42,7 +42,35 @@
 
 ## 安装
 
-### 前置要求
+### 快速安装（推荐）
+
+我们提供了自动安装脚本，可以自动检测系统环境并完成安装：
+
+**macOS / Linux:**
+```bash
+chmod +x install.sh
+./install.sh
+```
+
+**Windows PowerShell:**
+```powershell
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+.\install.ps1
+```
+
+安装脚本会自动：
+- 检测操作系统和 Python 环境
+- 安装 Python 依赖（自动处理 PEP 668 限制）
+- 设置 `OBSIDIAN_VAULT_PATH` 环境变量
+- 创建 Obsidian 目录结构
+- 复制技能到 Claude Code 目录
+
+### 手动安装
+
+<details>
+<summary>点击展开手动安装步骤</summary>
+
+#### 前置要求
 
 1. **Claude Code CLI** - 需要安装并配置 Claude Code
 2. **Python 3.8+** - 用于运行搜索和分析脚本
@@ -61,7 +89,7 @@
    pip install -r requirements.txt
    ```
 
-### 安装步骤
+#### 安装步骤
 
 1. 将此仓库克隆或复制到你的 Claude Code skills 目录：
    ```bash
@@ -81,6 +109,8 @@
 2. 配置环境变量和路径（见下文"配置"部分）
 
 3. 重启 Claude Code CLI
+
+</details>
 
 ## 配置
 
