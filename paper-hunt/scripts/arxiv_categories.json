@@ -1,0 +1,1228 @@
+{
+  "version": "2024.03",
+  "description": "arXiv Category Taxonomy - Complete list of subject classifications",
+  "source": "https://arxiv.org/category_taxonomy",
+  "categories": {
+    "cs.AI": {
+      "name": "Artificial Intelligence",
+      "full_name": "Computer Science - Artificial Intelligence",
+      "description": "Covers all areas of AI except Vision, Robotics, Machine Learning, Multiagent Systems, and Computation and Language (Natural Language Processing), which have separate subject areas. In particular, includes Expert Systems, Theorem Proving, Knowledge Representation, Planning, and Uncertainty in AI.",
+      "keywords": ["AI", "artificial intelligence", "expert systems", "knowledge representation", "planning", "reasoning", "uncertainty", "theorem proving", "decision making", "cognitive systems"],
+      "parent": "cs"
+    },
+    "cs.AR": {
+      "name": "Hardware Architecture",
+      "full_name": "Computer Science - Hardware Architecture",
+      "description": "Covers systems organization and hardware architecture.",
+      "keywords": ["hardware", "architecture", "systems organization", "computer architecture", "processor design", "memory systems"],
+      "parent": "cs"
+    },
+    "cs.CC": {
+      "name": "Computational Complexity",
+      "full_name": "Computer Science - Computational Complexity",
+      "description": "Covers models of computation, complexity classes, structural complexity, complexity tradeoffs, upper and lower bounds.",
+      "keywords": ["complexity", "complexity theory", "computational complexity", "P vs NP", "complexity classes", "computability"],
+      "parent": "cs"
+    },
+    "cs.CE": {
+      "name": "Computational Engineering, Finance, and Science",
+      "full_name": "Computer Science - Computational Engineering, Finance, and Science",
+      "description": "Covers applications of computer science to the mathematical modeling of complex systems in the fields of science, engineering, and finance.",
+      "keywords": ["computational engineering", "computational finance", "computational science", "simulation", "scientific computing"],
+      "parent": "cs"
+    },
+    "cs.CG": {
+      "name": "Computational Geometry",
+      "full_name": "Computer Science - Computational Geometry",
+      "description": "Covers computational geometry algorithms and techniques.",
+      "keywords": ["computational geometry", "geometric algorithms", "voronoi", "convex hull", "triangulation", "spatial data"],
+      "parent": "cs"
+    },
+    "cs.CL": {
+      "name": "Computation and Language",
+      "full_name": "Computer Science - Computation and Language",
+      "description": "Covers natural language processing. Includes work on computational linguistics, speech, text retrieval, etc.",
+      "keywords": ["NLP", "natural language processing", "computational linguistics", "speech recognition", "text mining", "language model", "LLM", "large language model", "GPT", "BERT", "transformer", "machine translation", "sentiment analysis", "question answering", "text generation", "dialogue", "chatbot", "word embedding", "language understanding", "language generation", "parsing", "named entity recognition", "NER", "coreference resolution", "semantic parsing", "information extraction"],
+      "parent": "cs"
+    },
+    "cs.CR": {
+      "name": "Cryptography and Security",
+      "full_name": "Computer Science - Cryptography and Security",
+      "description": "Covers all areas of cryptography and security including authentication, public key cryptosystems, proof-carrying code, etc.",
+      "keywords": ["security", "cryptography", "encryption", "authentication", "privacy", "cybersecurity", "network security", "cryptographic protocols"],
+      "parent": "cs"
+    },
+    "cs.CV": {
+      "name": "Computer Vision and Pattern Recognition",
+      "full_name": "Computer Science - Computer Vision and Pattern Recognition",
+      "description": "Covers image processing, computer vision, pattern recognition, and scene understanding.",
+      "keywords": ["computer vision", "image processing", "pattern recognition", "object detection", "segmentation", "image classification", "face recognition", "visual recognition", "scene understanding", "video analysis", "depth estimation", "pose estimation", "image generation", "GAN", "diffusion model", "vision transformer", "ViT", "multimodal", "vision-language", "image captioning", "visual question answering", "VQA", "optical flow", "SLAM", "3D reconstruction", "neural radiance fields", "NeRF"],
+      "parent": "cs"
+    },
+    "cs.CY": {
+      "name": "Computers and Society",
+      "full_name": "Computer Science - Computers and Society",
+      "description": "Covers impact of computers on society, computer ethics, information technology and public policy, legal aspects of computing, computers and education.",
+      "keywords": ["computers and society", "computer ethics", "IT policy", "digital divide", "privacy policy", "AI ethics", "algorithmic fairness"],
+      "parent": "cs"
+    },
+    "cs.DB": {
+      "name": "Databases",
+      "full_name": "Computer Science - Databases",
+      "description": "Covers database management, datamining, and data processing.",
+      "keywords": ["database", "data management", "SQL", "NoSQL", "query optimization", "data mining", "data warehouse", "transaction processing", "distributed database"],
+      "parent": "cs"
+    },
+    "cs.DC": {
+      "name": "Distributed, Parallel, and Cluster Computing",
+      "full_name": "Computer Science - Distributed, Parallel, and Cluster Computing",
+      "description": "Covers fault-tolerance, distributed algorithms, stability, parallel computation, and cluster computing.",
+      "keywords": ["distributed systems", "parallel computing", "cluster computing", "cloud computing", "fault tolerance", "distributed algorithms", "consensus", "blockchain", "edge computing", "high performance computing", "HPC"],
+      "parent": "cs"
+    },
+    "cs.DL": {
+      "name": "Digital Libraries",
+      "full_name": "Computer Science - Digital Libraries",
+      "description": "Covers all aspects of the digital library design and document and text creation.",
+      "keywords": ["digital libraries", "digital preservation", "document management", "information organization", "metadata"],
+      "parent": "cs"
+    },
+    "cs.DM": {
+      "name": "Discrete Mathematics",
+      "full_name": "Computer Science - Discrete Mathematics",
+      "description": "Covers combinatorics, graph theory, applications of probability.",
+      "keywords": ["discrete mathematics", "combinatorics", "graph theory", "discrete probability", "enumeration"],
+      "parent": "cs"
+    },
+    "cs.DS": {
+      "name": "Data Structures and Algorithms",
+      "full_name": "Computer Science - Data Structures and Algorithms",
+      "description": "Covers data structures and analysis of algorithms.",
+      "keywords": ["algorithms", "data structures", "algorithm analysis", "complexity analysis", "optimization algorithms", "sorting", "searching", "graph algorithms"],
+      "parent": "cs"
+    },
+    "cs.ET": {
+      "name": "Emerging Technologies",
+      "full_name": "Computer Science - Emerging Technologies",
+      "description": "Covers approaches to information processing based on alternatives to silicon CMOS-based technologies.",
+      "keywords": ["emerging technologies", "quantum computing", "neuromorphic computing", "memristors", "photonics", "spintronics"],
+      "parent": "cs"
+    },
+    "cs.FL": {
+      "name": "Formal Languages and Automata Theory",
+      "full_name": "Computer Science - Formal Languages and Automata Theory",
+      "description": "Covers automata theory, formal language theory, grammars, and combinatorics on words.",
+      "keywords": ["formal languages", "automata theory", "grammars", "regular expressions", "context-free languages", "Turing machines"],
+      "parent": "cs"
+    },
+    "cs.GL": {
+      "name": "General Literature",
+      "full_name": "Computer Science - General Literature",
+      "description": "Covers introductory material, survey material, predictions of future trends, biographies, and miscellaneous computer-science related material.",
+      "keywords": ["general literature", "survey", "tutorial", "overview", "introductory"],
+      "parent": "cs"
+    },
+    "cs.GR": {
+      "name": "Graphics",
+      "full_name": "Computer Science - Graphics",
+      "description": "Covers all aspects of computer graphics.",
+      "keywords": ["computer graphics", "rendering", "animation", "3D modeling", "visualization", "ray tracing", "shading", "texture mapping"],
+      "parent": "cs"
+    },
+    "cs.GT": {
+      "name": "Computer Science and Game Theory",
+      "full_name": "Computer Science - Computer Science and Game Theory",
+      "description": "Covers all theoretical and applied aspects at the intersection of computer science and game theory.",
+      "keywords": ["game theory", "mechanism design", "auction theory", "multi-agent games", "algorithmic game theory", "Nash equilibrium"],
+      "parent": "cs"
+    },
+    "cs.HC": {
+      "name": "Human-Computer Interaction",
+      "full_name": "Computer Science - Human-Computer Interaction",
+      "description": "Covers human factors, user interfaces, and collaborative computing.",
+      "keywords": ["HCI", "human-computer interaction", "user interface", "UX", "user experience", "usability", "interaction design", "accessibility", "gesture recognition", "VR", "AR", "virtual reality", "augmented reality"],
+      "parent": "cs"
+    },
+    "cs.IR": {
+      "name": "Information Retrieval",
+      "full_name": "Computer Science - Information Retrieval",
+      "description": "Covers indexing, dictionaries, retrieval, content and analysis.",
+      "keywords": ["information retrieval", "search", "search engine", "ranking", "recommendation system", "document retrieval", "query processing", "relevance ranking", "semantic search", "RAG", "retrieval augmented generation"],
+      "parent": "cs"
+    },
+    "cs.IT": {
+      "name": "Information Theory",
+      "full_name": "Computer Science - Information Theory",
+      "description": "Covers theoretical and experimental aspects of information theory and coding.",
+      "keywords": ["information theory", "coding theory", "entropy", "compression", "error correction", "channel capacity"],
+      "parent": "cs"
+    },
+    "cs.LG": {
+      "name": "Machine Learning",
+      "full_name": "Computer Science - Machine Learning",
+      "description": "Papers on all aspects of machine learning research (supervised, unsupervised, reinforcement learning, bandit problems, and so on) including also robustness, explanation, fairness, and methodology.",
+      "keywords": ["machine learning", "deep learning", "neural network", "supervised learning", "unsupervised learning", "reinforcement learning", "classification", "regression", "clustering", "dimensionality reduction", "feature learning", "representation learning", "transfer learning", "meta-learning", "few-shot learning", "self-supervised learning", "semi-supervised learning", "active learning", "online learning", "ensemble methods", "gradient descent", "optimization", "backpropagation", "CNN", "RNN", "LSTM", "transformer", "attention", "BERT", "GPT", "fine-tuning", "pre-training", "regularization", "dropout", "batch normalization", "model compression", "quantization", "pruning", "distillation", "knowledge distillation", "neural architecture search", "NAS", "autoML", "hyperparameter optimization", "explainable AI", "XAI", "interpretability", "fairness", "robustness", "adversarial", "federated learning", "differential privacy"],
+      "parent": "cs"
+    },
+    "cs.LO": {
+      "name": "Logic in Computer Science",
+      "full_name": "Computer Science - Logic in Computer Science",
+      "description": "Covers all aspects of logic in computer science, including finite model theory, logics of programs, modal logic, and program verification.",
+      "keywords": ["logic", "formal verification", "model checking", "theorem proving", "program verification", "temporal logic", "modal logic", "type theory"],
+      "parent": "cs"
+    },
+    "cs.MA": {
+      "name": "Multiagent Systems",
+      "full_name": "Computer Science - Multiagent Systems",
+      "description": "Covers multiagent systems, distributed artificial intelligence, intelligent agents, coordinated interactions, and practical applications.",
+      "keywords": ["multi-agent systems", "agent", "intelligent agent", "multi-agent", "coordination", "cooperation", "negotiation", "distributed AI", "autonomous agents", "agent planning", "agent learning", "swarm intelligence", "collective intelligence"],
+      "parent": "cs"
+    },
+    "cs.MM": {
+      "name": "Multimedia",
+      "full_name": "Computer Science - Multimedia",
+      "description": "Covers multimedia computing, including audio, video, and multimodal processing.",
+      "keywords": ["multimedia", "multimodal", "audio video", "video processing", "audio processing", "media computing", "cross-modal", "multimodal learning", "vision-language", "audio-visual"],
+      "parent": "cs"
+    },
+    "cs.MS": {
+      "name": "Mathematical Software",
+      "full_name": "Computer Science - Mathematical Software",
+      "description": "Covers mathematical software development and applications.",
+      "keywords": ["mathematical software", "numerical software", "scientific software", "computational tools"],
+      "parent": "cs"
+    },
+    "cs.NA": {
+      "name": "Numerical Analysis",
+      "full_name": "Computer Science - Numerical Analysis",
+      "description": "Covers numerical algorithms for problems in analysis and algebra, scientific computation.",
+      "keywords": ["numerical analysis", "numerical methods", "scientific computing", "numerical algorithms", "finite elements", "numerical optimization"],
+      "parent": "cs"
+    },
+    "cs.NE": {
+      "name": "Neural and Evolutionary Computing",
+      "full_name": "Computer Science - Neural and Evolutionary Computing",
+      "description": "Covers neural networks, connectionism, genetic algorithms, artificial life, adaptive behavior.",
+      "keywords": ["neural network", "evolutionary computing", "genetic algorithm", "genetic programming", "neuroevolution", "evolutionary strategy", "artificial life", "spiking neural network", "neuromorphic", "memetic algorithms"],
+      "parent": "cs"
+    },
+    "cs.NI": {
+      "name": "Networking and Internet Architecture",
+      "full_name": "Computer Science - Networking and Internet Architecture",
+      "description": "Covers all aspects of computer communication networks, including network architecture and design, network protocols, and internetwork standards.",
+      "keywords": ["networking", "network architecture", "Internet", "network protocols", "TCP/IP", "wireless networks", "mobile networks", "network security", "SDN", "network virtualization"],
+      "parent": "cs"
+    },
+    "cs.OH": {
+      "name": "Other Computer Science",
+      "full_name": "Computer Science - Other Computer Science",
+      "description": "This is the classification to use for documents that do not fit anywhere else.",
+      "keywords": ["other computer science"],
+      "parent": "cs"
+    },
+    "cs.OS": {
+      "name": "Operating Systems",
+      "full_name": "Computer Science - Operating Systems",
+      "description": "Covers operating systems design and implementation.",
+      "keywords": ["operating systems", "OS", "kernel", "file systems", "memory management", "process scheduling", "virtualization", "containers"],
+      "parent": "cs"
+    },
+    "cs.PF": {
+      "name": "Performance",
+      "full_name": "Computer Science - Performance",
+      "description": "Covers performance measurement and evaluation, queueing, and simulation.",
+      "keywords": ["performance", "benchmarking", "performance evaluation", "queueing theory", "performance modeling", "optimization"],
+      "parent": "cs"
+    },
+    "cs.PL": {
+      "name": "Programming Languages",
+      "full_name": "Computer Science - Programming Languages",
+      "description": "Covers programming language semantics, language features, programming approaches.",
+      "keywords": ["programming languages", "compilers", "language design", "type systems", "semantics", "functional programming", "object-oriented programming", "static analysis", "program analysis"],
+      "parent": "cs"
+    },
+    "cs.RO": {
+      "name": "Robotics",
+      "full_name": "Computer Science - Robotics",
+      "description": "Covers robotics research including robot design, control, planning, and applications.",
+      "keywords": ["robotics", "robot", "manipulation", "navigation", "robot control", "motion planning", "path planning", "robot learning", "embodied AI", "autonomous systems", "robot perception", "SLAM", "grasping", "mobile robot", "humanoid", "drone", "UAV", "robotic arm", "manipulator", "sim-to-real", "robot simulation"],
+      "parent": "cs"
+    },
+    "cs.SC": {
+      "name": "Symbolic Computation",
+      "full_name": "Computer Science - Symbolic Computation",
+      "description": "Covers symbolic computation and computer algebra.",
+      "keywords": ["symbolic computation", "computer algebra", "symbolic mathematics", "automated theorem proving"],
+      "parent": "cs"
+    },
+    "cs.SD": {
+      "name": "Sound",
+      "full_name": "Computer Science - Sound",
+      "description": "Covers all aspects of computing with sound, and sound as an information channel.",
+      "keywords": ["sound", "audio", "speech", "music information retrieval", "audio processing", "sound synthesis", "acoustic computing", "speech synthesis", "TTS", "speech recognition", "ASR"],
+      "parent": "cs"
+    },
+    "cs.SE": {
+      "name": "Software Engineering",
+      "full_name": "Computer Science - Software Engineering",
+      "description": "Covers design tools, software metrics, testing and debugging, programming environments, etc.",
+      "keywords": ["software engineering", "software development", "testing", "debugging", "code review", "software maintenance", "refactoring", "software architecture", "DevOps", "CI/CD", "code generation"],
+      "parent": "cs"
+    },
+    "cs.SI": {
+      "name": "Social and Information Networks",
+      "full_name": "Computer Science - Social and Information Networks",
+      "description": "Covers the design, analysis, and modeling of social and information networks.",
+      "keywords": ["social networks", "information networks", "network analysis", "social media", "graph mining", "community detection", "influence propagation", "network science"],
+      "parent": "cs"
+    },
+    "cs.SY": {
+      "name": "Systems and Control",
+      "full_name": "Computer Science - Systems and Control",
+      "description": "Covers theoretical and experimental research covering all facets of automatic control systems.",
+      "keywords": ["control systems", "automation", "feedback control", "adaptive control", "robust control", "cyber-physical systems", "control theory"],
+      "parent": "cs"
+    },
+    "eess.AS": {
+      "name": "Audio and Speech Processing",
+      "full_name": "Electrical Engineering and Systems Science - Audio and Speech Processing",
+      "description": "Theory and methods for processing signals representing audio, speech, and language, and their applications.",
+      "keywords": ["audio processing", "speech processing", "speech recognition", "speech synthesis", "speaker recognition", "audio enhancement", "music processing", "acoustic modeling", "speech enhancement", "voice conversion"],
+      "parent": "eess"
+    },
+    "eess.IV": {
+      "name": "Image and Video Processing",
+      "full_name": "Electrical Engineering and Systems Science - Image and Video Processing",
+      "description": "Theory, algorithms, and architectures for the formation, capture, processing, communication, analysis, and display of images, video, and multidimensional signals.",
+      "keywords": ["image processing", "video processing", "image compression", "video compression", "image restoration", "super-resolution", "image enhancement", "medical imaging", "tomography"],
+      "parent": "eess"
+    },
+    "eess.SP": {
+      "name": "Signal Processing",
+      "full_name": "Electrical Engineering and Systems Science - Signal Processing",
+      "description": "Theory, algorithms, performance analysis and applications of signal and data analysis.",
+      "keywords": ["signal processing", "filtering", "spectral analysis", "time-frequency analysis", "adaptive filtering", "sensor arrays", "communications signal processing"],
+      "parent": "eess"
+    },
+    "eess.SY": {
+      "name": "Systems and Control",
+      "full_name": "Electrical Engineering and Systems Science - Systems and Control",
+      "description": "Theoretical and experimental research covering all facets of automatic control systems.",
+      "keywords": ["control systems", "automation", "feedback control", "optimal control", "robust control", "nonlinear control", "adaptive control", "model predictive control"],
+      "parent": "eess"
+    },
+    "stat.AP": {
+      "name": "Applications",
+      "full_name": "Statistics - Applications",
+      "description": "Applications of statistical methods to various domains.",
+      "keywords": ["applied statistics", "statistical applications", "data analysis", "biostatistics", "environmental statistics", "social statistics"],
+      "parent": "stat"
+    },
+    "stat.CO": {
+      "name": "Computation",
+      "full_name": "Statistics - Computation",
+      "description": "Computational statistics, algorithms, simulation, visualization.",
+      "keywords": ["computational statistics", "statistical computing", "MCMC", "Monte Carlo", "Bayesian computation", "statistical algorithms"],
+      "parent": "stat"
+    },
+    "stat.ME": {
+      "name": "Methodology",
+      "full_name": "Statistics - Methodology",
+      "description": "Statistical methodology including design, surveys, model selection, etc.",
+      "keywords": ["statistical methodology", "experimental design", "survey methodology", "model selection", "multiple testing", "nonparametric methods", "semiparametric methods"],
+      "parent": "stat"
+    },
+    "stat.ML": {
+      "name": "Machine Learning",
+      "full_name": "Statistics - Machine Learning",
+      "description": "Covers machine learning papers with a statistical or theoretical grounding.",
+      "keywords": ["machine learning", "statistical learning", "deep learning", "neural network", "supervised learning", "unsupervised learning", "reinforcement learning", "Bayesian methods", "Gaussian processes", "kernel methods", "statistical inference"],
+      "parent": "stat"
+    },
+    "stat.OT": {
+      "name": "Other Statistics",
+      "full_name": "Statistics - Other Statistics",
+      "description": "Work in statistics that does not fit into the other stat classifications.",
+      "keywords": ["other statistics", "statistics"],
+      "parent": "stat"
+    },
+    "stat.TH": {
+      "name": "Statistics Theory",
+      "full_name": "Statistics - Statistics Theory",
+      "description": "Asymptotics, Bayesian Inference, Decision Theory, Estimation, Foundations, Inference, Testing.",
+      "keywords": ["statistical theory", "asymptotic theory", "Bayesian inference", "decision theory", "estimation theory", "hypothesis testing", "statistical inference"],
+      "parent": "stat"
+    },
+    "math.AC": {
+      "name": "Commutative Algebra",
+      "full_name": "Mathematics - Commutative Algebra",
+      "description": "Commutative rings, modules, ideals, homological algebra, computational aspects.",
+      "keywords": ["commutative algebra", "rings", "ideals", "modules", "homological algebra"],
+      "parent": "math"
+    },
+    "math.AG": {
+      "name": "Algebraic Geometry",
+      "full_name": "Mathematics - Algebraic Geometry",
+      "description": "Algebraic varieties, stacks, sheaves, schemes, moduli spaces.",
+      "keywords": ["algebraic geometry", "varieties", "schemes", "sheaves", "moduli spaces"],
+      "parent": "math"
+    },
+    "math.AP": {
+      "name": "Analysis of PDEs",
+      "full_name": "Mathematics - Analysis of PDEs",
+      "description": "Existence and uniqueness, boundary conditions, linear and non-linear operators.",
+      "keywords": ["PDE", "partial differential equations", "boundary value problems", "elliptic equations", "parabolic equations", "hyperbolic equations"],
+      "parent": "math"
+    },
+    "math.AT": {
+      "name": "Algebraic Topology",
+      "full_name": "Mathematics - Algebraic Topology",
+      "description": "Homotopy theory, homological algebra, algebraic treatments of manifolds.",
+      "keywords": ["algebraic topology", "homotopy", "homology", "cohomology", "fundamental group"],
+      "parent": "math"
+    },
+    "math.CA": {
+      "name": "Classical Analysis and ODEs",
+      "full_name": "Mathematics - Classical Analysis and ODEs",
+      "description": "Special functions, orthogonal polynomials, harmonic analysis, ODEs.",
+      "keywords": ["classical analysis", "ODE", "ordinary differential equations", "special functions", "harmonic analysis"],
+      "parent": "math"
+    },
+    "math.CO": {
+      "name": "Combinatorics",
+      "full_name": "Mathematics - Combinatorics",
+      "description": "Discrete mathematics, graph theory, enumeration, combinatorial optimization.",
+      "keywords": ["combinatorics", "graph theory", "enumeration", "combinatorial optimization", "Ramsey theory", "discrete mathematics"],
+      "parent": "math"
+    },
+    "math.DG": {
+      "name": "Differential Geometry",
+      "full_name": "Mathematics - Differential Geometry",
+      "description": "Complex, contact, Riemannian, pseudo-Riemannian and Finsler geometry.",
+      "keywords": ["differential geometry", "Riemannian geometry", "manifolds", "curvature", "geometric analysis"],
+      "parent": "math"
+    },
+    "math.DS": {
+      "name": "Dynamical Systems",
+      "full_name": "Mathematics - Dynamical Systems",
+      "description": "Dynamics of differential equations and flows, mechanics, iterations.",
+      "keywords": ["dynamical systems", "chaos", "bifurcation", "attractors", "ergodic theory"],
+      "parent": "math"
+    },
+    "math.FA": {
+      "name": "Functional Analysis",
+      "full_name": "Mathematics - Functional Analysis",
+      "description": "Banach spaces, function spaces, real functions, integral transforms.",
+      "keywords": ["functional analysis", "Banach spaces", "Hilbert spaces", "operator theory", "measure theory"],
+      "parent": "math"
+    },
+    "math.GM": {
+      "name": "General Mathematics",
+      "full_name": "Mathematics - General Mathematics",
+      "description": "Mathematical material of general interest, topics not covered elsewhere.",
+      "keywords": ["general mathematics"],
+      "parent": "math"
+    },
+    "math.GR": {
+      "name": "Group Theory",
+      "full_name": "Mathematics - Group Theory",
+      "description": "Finite groups, topological groups, representation theory, cohomology.",
+      "keywords": ["group theory", "finite groups", "representation theory", "Lie groups", "algebraic groups"],
+      "parent": "math"
+    },
+    "math.GT": {
+      "name": "Geometric Topology",
+      "full_name": "Mathematics - Geometric Topology",
+      "description": "Manifolds, orbifolds, polyhedra, cell complexes, foliations.",
+      "keywords": ["geometric topology", "manifolds", "knots", "3-manifolds", "hyperbolic geometry"],
+      "parent": "math"
+    },
+    "math.IT": {
+      "name": "Information Theory",
+      "full_name": "Mathematics - Information Theory",
+      "description": "Covers theoretical and experimental aspects of information theory and coding.",
+      "keywords": ["information theory", "coding theory", "entropy", "compression", "error correction"],
+      "parent": "math"
+    },
+    "math.LO": {
+      "name": "Logic",
+      "full_name": "Mathematics - Logic",
+      "description": "Logic, set theory, point-set topology, formal mathematics.",
+      "keywords": ["mathematical logic", "set theory", "model theory", "proof theory", "computability"],
+      "parent": "math"
+    },
+    "math.NA": {
+      "name": "Numerical Analysis",
+      "full_name": "Mathematics - Numerical Analysis",
+      "description": "Numerical algorithms for problems in analysis and algebra.",
+      "keywords": ["numerical analysis", "numerical methods", "finite difference", "finite element", "numerical linear algebra"],
+      "parent": "math"
+    },
+    "math.NT": {
+      "name": "Number Theory",
+      "full_name": "Mathematics - Number Theory",
+      "description": "Prime numbers, diophantine equations, analytic number theory.",
+      "keywords": ["number theory", "prime numbers", "diophantine equations", "algebraic number theory", "analytic number theory"],
+      "parent": "math"
+    },
+    "math.OC": {
+      "name": "Optimization and Control",
+      "full_name": "Mathematics - Optimization and Control",
+      "description": "Operations research, linear programming, control theory, systems theory.",
+      "keywords": ["optimization", "linear programming", "convex optimization", "control theory", "optimal control", "operations research"],
+      "parent": "math"
+    },
+    "math.PR": {
+      "name": "Probability",
+      "full_name": "Mathematics - Probability",
+      "description": "Theory and applications of probability and stochastic processes.",
+      "keywords": ["probability", "stochastic processes", "random variables", "probability theory", "Markov chains", "Brownian motion"],
+      "parent": "math"
+    },
+    "math.QA": {
+      "name": "Quantum Algebra",
+      "full_name": "Mathematics - Quantum Algebra",
+      "description": "Quantum groups, skein theories, operadic and diagrammatic algebra.",
+      "keywords": ["quantum algebra", "quantum groups", "Hopf algebras", "tensor categories"],
+      "parent": "math"
+    },
+    "math.RA": {
+      "name": "Rings and Algebras",
+      "full_name": "Mathematics - Rings and Algebras",
+      "description": "Non-commutative rings and algebras, non-associative algebras.",
+      "keywords": ["ring theory", "algebras", "non-commutative algebra", "Lie algebras"],
+      "parent": "math"
+    },
+    "math.RT": {
+      "name": "Representation Theory",
+      "full_name": "Mathematics - Representation Theory",
+      "description": "Linear representations of algebras and groups, Lie theory.",
+      "keywords": ["representation theory", "Lie theory", "character theory", "representations"],
+      "parent": "math"
+    },
+    "math.SP": {
+      "name": "Spectral Theory",
+      "full_name": "Mathematics - Spectral Theory",
+      "description": "Schrödinger operators, operators on manifolds, general differential operators.",
+      "keywords": ["spectral theory", "eigenvalues", "eigenfunctions", "quantum mechanics", "operators"],
+      "parent": "math"
+    },
+    "math.CT": {
+      "name": "Category Theory",
+      "full_name": "Mathematics - Category Theory",
+      "description": "Enriched categories, topoi, abelian categories, monoidal categories, homological algebra.",
+      "keywords": ["category theory", "categories", "functors", "natural transformations", "topos", "monoidal categories"],
+      "parent": "math"
+    },
+    "math.CV": {
+      "name": "Complex Variables",
+      "full_name": "Mathematics - Complex Variables",
+      "description": "Holomorphic functions, automorphic group actions and forms, pseudoconvexity, complex geometry.",
+      "keywords": ["complex analysis", "holomorphic functions", "complex variables", "automorphic forms", "complex geometry"],
+      "parent": "math"
+    },
+    "math.GN": {
+      "name": "General Topology",
+      "full_name": "Mathematics - General Topology",
+      "description": "Continuum theory, point-set topology, spaces with algebraic structure, foundations, dimension theory.",
+      "keywords": ["general topology", "point-set topology", "topological spaces", "continuum theory"],
+      "parent": "math"
+    },
+    "math.HO": {
+      "name": "History and Overview",
+      "full_name": "Mathematics - History and Overview",
+      "description": "Biographies, philosophy of mathematics, mathematics education, recreational mathematics.",
+      "keywords": ["mathematics history", "philosophy of mathematics", "mathematics education", "recreational mathematics"],
+      "parent": "math"
+    },
+    "math.KT": {
+      "name": "K-Theory and Homology",
+      "full_name": "Mathematics - K-Theory and Homology",
+      "description": "Algebraic and topological K-theory, relations with topology, commutative algebra, and operator algebras.",
+      "keywords": ["K-theory", "homology", "topological K-theory", "algebraic K-theory"],
+      "parent": "math"
+    },
+    "math.MG": {
+      "name": "Metric Geometry",
+      "full_name": "Mathematics - Metric Geometry",
+      "description": "Euclidean, hyperbolic, discrete, convex, coarse geometry, comparisons in Riemannian geometry.",
+      "keywords": ["metric geometry", "hyperbolic geometry", "convex geometry", "discrete geometry", "coarse geometry"],
+      "parent": "math"
+    },
+    "math.MP": {
+      "name": "Mathematical Physics",
+      "full_name": "Mathematics - Mathematical Physics",
+      "description": "Application of mathematics to problems in physics, mathematically rigorous formulations of physical theories.",
+      "keywords": ["mathematical physics", "quantum mechanics", "statistical mechanics", "mathematical methods"],
+      "parent": "math"
+    },
+    "math.OA": {
+      "name": "Operator Algebras",
+      "full_name": "Mathematics - Operator Algebras",
+      "description": "Algebras of operators on Hilbert space, C*-algebras, von Neumann algebras, non-commutative geometry.",
+      "keywords": ["operator algebras", "C*-algebras", "von Neumann algebras", "non-commutative geometry"],
+      "parent": "math"
+    },
+    "math.SG": {
+      "name": "Symplectic Geometry",
+      "full_name": "Mathematics - Symplectic Geometry",
+      "description": "Hamiltonian systems, symplectic flows, classical integrable systems.",
+      "keywords": ["symplectic geometry", "Hamiltonian systems", "symplectic manifolds", "integrable systems"],
+      "parent": "math"
+    },
+    "math.ST": {
+      "name": "Statistics Theory",
+      "full_name": "Mathematics - Statistics Theory",
+      "description": "Applied, computational and theoretical statistics.",
+      "keywords": ["statistical theory", "inference", "estimation", "hypothesis testing", "asymptotics"],
+      "parent": "math"
+    },
+    "physics.acc-ph": {
+      "name": "Accelerator Physics",
+      "full_name": "Physics - Accelerator Physics",
+      "description": "Accelerator theory and simulation, accelerator technology and experiments.",
+      "keywords": ["accelerator physics", "particle accelerator", "beam physics", "synchrotron"],
+      "parent": "physics"
+    },
+    "physics.ao-ph": {
+      "name": "Atmospheric and Oceanic Physics",
+      "full_name": "Physics - Atmospheric and Oceanic Physics",
+      "description": "Atmospheric and oceanic physics and physical chemistry, biogeophysics, and climate science.",
+      "keywords": ["atmospheric physics", "oceanic physics", "climate science", "meteorology", "oceanography"],
+      "parent": "physics"
+    },
+    "physics.app-ph": {
+      "name": "Applied Physics",
+      "full_name": "Physics - Applied Physics",
+      "description": "Applications of physics to new technology.",
+      "keywords": ["applied physics", "technology", "devices", "instrumentation"],
+      "parent": "physics"
+    },
+    "physics.atm-clus": {
+      "name": "Atomic and Molecular Clusters",
+      "full_name": "Physics - Atomic and Molecular Clusters",
+      "description": "Atomic and molecular clusters, nanoparticles: geometric, electronic, optical, chemical, magnetic properties.",
+      "keywords": ["atomic clusters", "molecular clusters", "nanoparticles", "cluster physics"],
+      "parent": "physics"
+    },
+    "physics.atom-ph": {
+      "name": "Atomic Physics",
+      "full_name": "Physics - Atomic Physics",
+      "description": "Atomic and molecular structure, spectra, collisions, and data.",
+      "keywords": ["atomic physics", "molecular physics", "atomic spectra", "cold atoms"],
+      "parent": "physics"
+    },
+    "physics.bio-ph": {
+      "name": "Biological Physics",
+      "full_name": "Physics - Biological Physics",
+      "description": "Molecular biophysics, cellular biophysics, neurological biophysics.",
+      "keywords": ["biological physics", "biophysics", "molecular dynamics", "biomechanics", "bioinformatics"],
+      "parent": "physics"
+    },
+    "physics.chem-ph": {
+      "name": "Chemical Physics",
+      "full_name": "Physics - Chemical Physics",
+      "description": "Experimental, computational, and theoretical physics of atoms, molecules, and clusters.",
+      "keywords": ["chemical physics", "molecular physics", "spectroscopy", "quantum chemistry"],
+      "parent": "physics"
+    },
+    "physics.class-ph": {
+      "name": "Classical Physics",
+      "full_name": "Physics - Classical Physics",
+      "description": "Newtonian and relativistic dynamics, Maxwell's equations, classical waves.",
+      "keywords": ["classical mechanics", "electromagnetism", "thermodynamics", "classical physics"],
+      "parent": "physics"
+    },
+    "physics.comp-ph": {
+      "name": "Computational Physics",
+      "full_name": "Physics - Computational Physics",
+      "description": "All aspects of computational science applied to physics.",
+      "keywords": ["computational physics", "simulation", "numerical methods", "scientific computing"],
+      "parent": "physics"
+    },
+    "physics.data-an": {
+      "name": "Data Analysis, Statistics and Probability",
+      "full_name": "Physics - Data Analysis, Statistics and Probability",
+      "description": "Methods, software and hardware for physics data analysis.",
+      "keywords": ["data analysis", "statistics", "probability", "measurement", "uncertainty"],
+      "parent": "physics"
+    },
+    "physics.ed-ph": {
+      "name": "Physics Education",
+      "full_name": "Physics - Physics Education",
+      "description": "Research on teaching and learning in physics, misconceptions, assessment.",
+      "keywords": ["physics education", "teaching", "learning", "pedagogy", "physics instruction"],
+      "parent": "physics"
+    },
+    "physics.flu-dyn": {
+      "name": "Fluid Dynamics",
+      "full_name": "Physics - Fluid Dynamics",
+      "description": "Turbulence, instabilities, incompressible/compressible flows.",
+      "keywords": ["fluid dynamics", "turbulence", "aerodynamics", "hydrodynamics", "CFD"],
+      "parent": "physics"
+    },
+    "physics.gen-ph": {
+      "name": "General Physics",
+      "full_name": "Physics - General Physics",
+      "description": "General physics topics.",
+      "keywords": ["general physics"],
+      "parent": "physics"
+    },
+    "physics.geo-ph": {
+      "name": "Geophysics",
+      "full_name": "Physics - Geophysics",
+      "description": "Atmospheric physics, biogeosciences, computational geophysics.",
+      "keywords": ["geophysics", "seismology", "atmospheric physics", "earth science"],
+      "parent": "physics"
+    },
+    "physics.hist-ph": {
+      "name": "History and Philosophy of Physics",
+      "full_name": "Physics - History and Philosophy of Physics",
+      "description": "History and philosophy of all branches of physics, astrophysics, and cosmology.",
+      "keywords": ["physics history", "philosophy of physics", "history of science", "physicists"],
+      "parent": "physics"
+    },
+    "physics.ins-det": {
+      "name": "Instrumentation and Detectors",
+      "full_name": "Physics - Instrumentation and Detectors",
+      "description": "Instrumentation and detectors for research in natural science.",
+      "keywords": ["instrumentation", "detectors", "sensors", "measurement devices"],
+      "parent": "physics"
+    },
+    "physics.med-ph": {
+      "name": "Medical Physics",
+      "full_name": "Physics - Medical Physics",
+      "description": "Radiation therapy, radiation dosimetry, biomedical imaging.",
+      "keywords": ["medical physics", "radiation therapy", "medical imaging", "dosimetry"],
+      "parent": "physics"
+    },
+    "physics.optics": {
+      "name": "Optics",
+      "full_name": "Physics - Optics",
+      "description": "Adaptive optics, fiber optics, lasers, optical devices.",
+      "keywords": ["optics", "laser", "photonics", "fiber optics", "optical devices"],
+      "parent": "physics"
+    },
+    "physics.plasm-ph": {
+      "name": "Plasma Physics",
+      "full_name": "Physics - Plasma Physics",
+      "description": "Fundamental plasma physics, magnetically confined plasmas.",
+      "keywords": ["plasma physics", "fusion", "plasma dynamics", "magnetohydrodynamics"],
+      "parent": "physics"
+    },
+    "physics.pop-ph": {
+      "name": "Popular Physics",
+      "full_name": "Physics - Popular Physics",
+      "description": "Popular physics, physics for general audience.",
+      "keywords": ["popular physics", "science communication", "physics outreach"],
+      "parent": "physics"
+    },
+    "physics.soc-ph": {
+      "name": "Physics and Society",
+      "full_name": "Physics - Physics and Society",
+      "description": "Structure, dynamics and collective behavior of societies and groups, quantitative analysis of social networks.",
+      "keywords": ["physics and society", "social physics", "sociophysics", "social networks", "complex systems"],
+      "parent": "physics"
+    },
+    "physics.space-ph": {
+      "name": "Space Physics",
+      "full_name": "Physics - Space Physics",
+      "description": "Space plasma physics, heliophysics, space weather, planetary magnetospheres.",
+      "keywords": ["space physics", "space plasma", "heliophysics", "space weather", "magnetosphere"],
+      "parent": "physics"
+    },
+    "quant-ph": {
+      "name": "Quantum Physics",
+      "full_name": "Quantum Physics",
+      "description": "Quantum mechanics, quantum information, quantum computing.",
+      "keywords": ["quantum physics", "quantum mechanics", "quantum computing", "quantum information", "qubit", "quantum entanglement", "quantum algorithms", "quantum error correction", "quantum cryptography", "quantum simulation"],
+      "parent": "quant-ph"
+    },
+    "q-bio.BM": {
+      "name": "Biomolecules",
+      "full_name": "Quantitative Biology - Biomolecules",
+      "description": "DNA, RNA, proteins, lipids, etc.; molecular structures and folding kinetics.",
+      "keywords": ["biomolecules", "protein", "DNA", "RNA", "protein folding", "molecular dynamics"],
+      "parent": "q-bio"
+    },
+    "q-bio.CB": {
+      "name": "Cell Behavior",
+      "full_name": "Quantitative Biology - Cell Behavior",
+      "description": "Cell-cell signaling, morphogenesis, development, immunology.",
+      "keywords": ["cell biology", "cell signaling", "morphogenesis", "immunology", "cellular dynamics"],
+      "parent": "q-bio"
+    },
+    "q-bio.GN": {
+      "name": "Genomics",
+      "full_name": "Quantitative Biology - Genomics",
+      "description": "DNA sequencing and assembly, gene finding, genomic structure.",
+      "keywords": ["genomics", "DNA sequencing", "gene expression", "genome analysis", "bioinformatics"],
+      "parent": "q-bio"
+    },
+    "q-bio.MN": {
+      "name": "Molecular Networks",
+      "full_name": "Quantitative Biology - Molecular Networks",
+      "description": "Gene regulation, signal transduction, proteomics, metabolomics.",
+      "keywords": ["molecular networks", "gene regulation", "signal transduction", "proteomics", "metabolomics"],
+      "parent": "q-bio"
+    },
+    "q-bio.NC": {
+      "name": "Neurons and Cognition",
+      "full_name": "Quantitative Biology - Neurons and Cognition",
+      "description": "Synapse, cortex, neuronal dynamics, neural network, sensorimotor control.",
+      "keywords": ["neuroscience", "neural networks", "brain", "cognition", "neuronal dynamics", "computational neuroscience"],
+      "parent": "q-bio"
+    },
+    "q-bio.PE": {
+      "name": "Populations and Evolution",
+      "full_name": "Quantitative Biology - Populations and Evolution",
+      "description": "Population dynamics, evolutionary models, biodiversity.",
+      "keywords": ["population dynamics", "evolution", "ecology", "evolutionary biology", "phylogeny"],
+      "parent": "q-bio"
+    },
+    "q-bio.QM": {
+      "name": "Quantitative Methods",
+      "full_name": "Quantitative Biology - Quantitative Methods",
+      "description": "Experimental, numerical, statistical and mathematical contributions to biology.",
+      "keywords": ["quantitative biology", "biostatistics", "computational biology", "bioinformatics methods"],
+      "parent": "q-bio"
+    },
+    "q-bio.SC": {
+      "name": "Subcellular Processes",
+      "full_name": "Quantitative Biology - Subcellular Processes",
+      "description": "Assembly and control of subcellular structures, molecular motors, transport, mitosis and meiosis.",
+      "keywords": ["subcellular processes", "molecular motors", "cellular transport", "mitosis", "meiosis", "organelles", "cytoskeleton"],
+      "parent": "q-bio"
+    },
+    "q-bio.OT": {
+      "name": "Other Quantitative Biology",
+      "full_name": "Quantitative Biology - Other Quantitative Biology",
+      "description": "Work in quantitative biology that does not fit into the other q-bio classifications.",
+      "keywords": ["quantitative biology", "other quantitative biology"],
+      "parent": "q-bio"
+    },
+    "q-bio.TO": {
+      "name": "Tissues and Organs",
+      "full_name": "Quantitative Biology - Tissues and Organs",
+      "description": "Blood flow, biomechanics, tumor growth.",
+      "keywords": ["tissue engineering", "organ modeling", "biomechanics", "physiology"],
+      "parent": "q-bio"
+    },
+    "econ.EM": {
+      "name": "Econometrics",
+      "full_name": "Economics - Econometrics",
+      "description": "Econometric Theory, Micro-Econometrics, Macro-Econometrics.",
+      "keywords": ["econometrics", "economic modeling", "time series", "panel data", "causal inference"],
+      "parent": "econ"
+    },
+    "econ.GN": {
+      "name": "General Economics",
+      "full_name": "Economics - General Economics",
+      "description": "General methodological, applied, and empirical contributions to economics.",
+      "keywords": ["economics", "economic theory", "applied economics"],
+      "parent": "econ"
+    },
+    "econ.TH": {
+      "name": "Theoretical Economics",
+      "full_name": "Economics - Theoretical Economics",
+      "description": "Contract Theory, Decision Theory, Game Theory, General Equilibrium.",
+      "keywords": ["theoretical economics", "game theory", "mechanism design", "general equilibrium", "decision theory"],
+      "parent": "econ"
+    },
+    "q-fin.CP": {
+      "name": "Computational Finance",
+      "full_name": "Quantitative Finance - Computational Finance",
+      "description": "Computational methods with applications to financial modeling.",
+      "keywords": ["computational finance", "financial modeling", "Monte Carlo", "numerical methods", "derivatives pricing"],
+      "parent": "q-fin"
+    },
+    "q-fin.EC": {
+      "name": "Economics",
+      "full_name": "Quantitative Finance - Economics",
+      "description": "Economics, including micro and macro economics, international economics, theory of the firm, labor economics.",
+      "keywords": ["economics", "microeconomics", "macroeconomics", "labor economics", "international economics"],
+      "parent": "q-fin"
+    },
+    "q-fin.GN": {
+      "name": "General Finance",
+      "full_name": "Quantitative Finance - General Finance",
+      "description": "Development of general quantitative methodologies with applications in finance.",
+      "keywords": ["finance", "quantitative finance", "financial mathematics"],
+      "parent": "q-fin"
+    },
+    "q-fin.MF": {
+      "name": "Mathematical Finance",
+      "full_name": "Quantitative Finance - Mathematical Finance",
+      "description": "Mathematical and analytical methods of finance.",
+      "keywords": ["mathematical finance", "stochastic calculus", "option pricing", "risk neutral valuation"],
+      "parent": "q-fin"
+    },
+    "q-fin.PM": {
+      "name": "Portfolio Management",
+      "full_name": "Quantitative Finance - Portfolio Management",
+      "description": "Security selection, capital allocation, investment strategies.",
+      "keywords": ["portfolio management", "asset allocation", "investment", "portfolio optimization"],
+      "parent": "q-fin"
+    },
+    "q-fin.PR": {
+      "name": "Pricing of Securities",
+      "full_name": "Quantitative Finance - Pricing of Securities",
+      "description": "Valuation and hedging of financial securities and derivatives.",
+      "keywords": ["securities pricing", "derivatives", "options", "futures", "valuation"],
+      "parent": "q-fin"
+    },
+    "q-fin.RM": {
+      "name": "Risk Management",
+      "full_name": "Quantitative Finance - Risk Management",
+      "description": "Measurement and management of financial risks.",
+      "keywords": ["risk management", "VaR", "credit risk", "market risk", "financial risk"],
+      "parent": "q-fin"
+    },
+    "q-fin.ST": {
+      "name": "Statistical Finance",
+      "full_name": "Quantitative Finance - Statistical Finance",
+      "description": "Statistical and econophysics analyses with applications to financial markets.",
+      "keywords": ["statistical finance", "econophysics", "market analysis", "financial statistics"],
+      "parent": "q-fin"
+    },
+    "q-fin.TR": {
+      "name": "Trading and Market Microstructure",
+      "full_name": "Quantitative Finance - Trading and Market Microstructure",
+      "description": "Market microstructure, liquidity, automated trading.",
+      "keywords": ["trading", "market microstructure", "algorithmic trading", "high-frequency trading", "liquidity"],
+      "parent": "q-fin"
+    },
+    "astro-ph.CO": {
+      "name": "Cosmology and Nongalactic Astrophysics",
+      "full_name": "Astrophysics - Cosmology and Nongalactic Astrophysics",
+      "description": "Phenomenology of early universe, cosmic microwave background, cosmological parameters.",
+      "keywords": ["cosmology", "dark matter", "dark energy", "CMB", "large-scale structure", "early universe"],
+      "parent": "astro-ph"
+    },
+    "astro-ph.EP": {
+      "name": "Earth and Planetary Astrophysics",
+      "full_name": "Astrophysics - Earth and Planetary Astrophysics",
+      "description": "Planetary physics, extrasolar planets, solar system.",
+      "keywords": ["planetary science", "exoplanets", "solar system", "planetary formation"],
+      "parent": "astro-ph"
+    },
+    "astro-ph.GA": {
+      "name": "Astrophysics of Galaxies",
+      "full_name": "Astrophysics - Astrophysics of Galaxies",
+      "description": "Galaxies, star clusters, interstellar medium, galactic structure.",
+      "keywords": ["galaxies", "Milky Way", "star formation", "interstellar medium", "galactic dynamics"],
+      "parent": "astro-ph"
+    },
+    "astro-ph.HE": {
+      "name": "High Energy Astrophysical Phenomena",
+      "full_name": "Astrophysics - High Energy Astrophysical Phenomena",
+      "description": "Cosmic rays, gamma ray astronomy, supernovae, black holes.",
+      "keywords": ["high energy astrophysics", "black holes", "supernovae", "gamma rays", "pulsars"],
+      "parent": "astro-ph"
+    },
+    "astro-ph.IM": {
+      "name": "Instrumentation and Methods for Astrophysics",
+      "full_name": "Astrophysics - Instrumentation and Methods for Astrophysics",
+      "description": "Detector and telescope design, data analysis methods.",
+      "keywords": ["astronomical instrumentation", "telescopes", "detectors", "astronomical data analysis"],
+      "parent": "astro-ph"
+    },
+    "astro-ph.SR": {
+      "name": "Solar and Stellar Astrophysics",
+      "full_name": "Astrophysics - Solar and Stellar Astrophysics",
+      "description": "Stars, stellar evolution, binary systems, stellar atmospheres.",
+      "keywords": ["stellar astrophysics", "stars", "stellar evolution", "binary stars", "solar physics"],
+      "parent": "astro-ph"
+    },
+    "cond-mat.dis-nn": {
+      "name": "Disordered Systems and Neural Networks",
+      "full_name": "Condensed Matter - Disordered Systems and Neural Networks",
+      "description": "Glasses, spin glasses, random systems, neural networks.",
+      "keywords": ["disordered systems", "spin glasses", "neural networks", "glass transition"],
+      "parent": "cond-mat"
+    },
+    "cond-mat.mes-hall": {
+      "name": "Mesoscale and Nanoscale Physics",
+      "full_name": "Condensed Matter - Mesoscale and Nanoscale Physics",
+      "description": "Quantum dots, nanotubes, graphene, 2D electron gases.",
+      "keywords": ["mesoscopic physics", "nanostructures", "quantum dots", "graphene", "nanotubes"],
+      "parent": "cond-mat"
+    },
+    "cond-mat.mtrl-sci": {
+      "name": "Materials Science",
+      "full_name": "Condensed Matter - Materials Science",
+      "description": "Techniques, synthesis, characterization, structural phase transitions.",
+      "keywords": ["materials science", "materials characterization", "phase transitions", "crystal structure"],
+      "parent": "cond-mat"
+    },
+    "cond-mat.quant-gas": {
+      "name": "Quantum Gases",
+      "full_name": "Condensed Matter - Quantum Gases",
+      "description": "Ultracold atomic gases, Bose-Einstein condensation, optical lattices.",
+      "keywords": ["quantum gases", "Bose-Einstein condensate", "cold atoms", "optical lattices"],
+      "parent": "cond-mat"
+    },
+    "cond-mat.soft": {
+      "name": "Soft Condensed Matter",
+      "full_name": "Condensed Matter - Soft Condensed Matter",
+      "description": "Membranes, polymers, liquid crystals, colloids, granular matter.",
+      "keywords": ["soft matter", "polymers", "liquid crystals", "colloids", "granular materials"],
+      "parent": "cond-mat"
+    },
+    "cond-mat.stat-mech": {
+      "name": "Statistical Mechanics",
+      "full_name": "Condensed Matter - Statistical Mechanics",
+      "description": "Phase transitions, thermodynamics, field theory, renormalization group.",
+      "keywords": ["statistical mechanics", "phase transitions", "thermodynamics", "renormalization group"],
+      "parent": "cond-mat"
+    },
+    "cond-mat.str-el": {
+      "name": "Strongly Correlated Electrons",
+      "full_name": "Condensed Matter - Strongly Correlated Electrons",
+      "description": "Quantum magnetism, non-Fermi liquids, metal-insulator transitions.",
+      "keywords": ["strongly correlated", "quantum magnetism", "superconductivity", "heavy fermions"],
+      "parent": "cond-mat"
+    },
+    "cond-mat.supr-con": {
+      "name": "Superconductivity",
+      "full_name": "Condensed Matter - Superconductivity",
+      "description": "Superconductivity theory, models, experiment.",
+      "keywords": ["superconductivity", "superconductors", "Cooper pairs", "high-Tc superconductors"],
+      "parent": "cond-mat"
+    },
+    "cond-mat.other": {
+      "name": "Other Condensed Matter",
+      "full_name": "Condensed Matter - Other Condensed Matter",
+      "description": "Work in condensed matter that does not fit into the other cond-mat classifications.",
+      "keywords": ["other condensed matter", "condensed matter"],
+      "parent": "cond-mat"
+    },
+    "nlin.AO": {
+      "name": "Adaptation and Self-Organizing Systems",
+      "full_name": "Nonlinear Sciences - Adaptation and Self-Organizing Systems",
+      "description": "Adaptation, self-organizing systems, statistical physics, fluctuating systems, stochastic processes.",
+      "keywords": ["adaptation", "self-organizing systems", "complex systems", "stochastic processes", "machine learning"],
+      "parent": "nlin"
+    },
+    "nlin.CD": {
+      "name": "Chaotic Dynamics",
+      "full_name": "Nonlinear Sciences - Chaotic Dynamics",
+      "description": "Dynamical systems, chaos, quantum chaos, topological dynamics, cycle expansions, turbulence.",
+      "keywords": ["chaos", "chaotic dynamics", "dynamical systems", "quantum chaos", "turbulence"],
+      "parent": "nlin"
+    },
+    "nlin.CG": {
+      "name": "Cellular Automata and Lattice Gases",
+      "full_name": "Nonlinear Sciences - Cellular Automata and Lattice Gases",
+      "description": "Computational methods, time series analysis, signal processing, wavelets, lattice gases.",
+      "keywords": ["cellular automata", "lattice gases", "computational methods", "time series"],
+      "parent": "nlin"
+    },
+    "nlin.PS": {
+      "name": "Pattern Formation and Solitons",
+      "full_name": "Nonlinear Sciences - Pattern Formation and Solitons",
+      "description": "Pattern formation, coherent structures, solitons.",
+      "keywords": ["pattern formation", "solitons", "coherent structures", "nonlinear waves"],
+      "parent": "nlin"
+    },
+    "nlin.SI": {
+      "name": "Exactly Solvable and Integrable Systems",
+      "full_name": "Nonlinear Sciences - Exactly Solvable and Integrable Systems",
+      "description": "Exactly solvable systems, integrable PDEs, integrable ODEs, Painleve analysis.",
+      "keywords": ["integrable systems", "exactly solvable", "Painleve", "integrable equations"],
+      "parent": "nlin"
+    },
+    "gr-qc": {
+      "name": "General Relativity and Quantum Cosmology",
+      "full_name": "General Relativity and Quantum Cosmology",
+      "description": "General relativity, quantum cosmology, gravitational waves, alternative theories of gravity, quantum gravity.",
+      "keywords": ["general relativity", "quantum cosmology", "gravitational waves", "quantum gravity", "Einstein equations"],
+      "parent": "gr-qc"
+    },
+    "hep-ex": {
+      "name": "High Energy Physics - Experiment",
+      "full_name": "High Energy Physics - Experiment",
+      "description": "Results from high-energy/particle physics experiments and prospects for future experimental results.",
+      "keywords": ["high energy physics", "particle physics experiment", "particle detectors", "collider physics"],
+      "parent": "hep-ex"
+    },
+    "hep-lat": {
+      "name": "High Energy Physics - Lattice",
+      "full_name": "High Energy Physics - Lattice",
+      "description": "Lattice field theory, phenomenology from lattice field theory, algorithms for lattice field theory.",
+      "keywords": ["lattice field theory", "lattice QCD", "computational physics", "numerical simulation"],
+      "parent": "hep-lat"
+    },
+    "hep-ph": {
+      "name": "High Energy Physics - Phenomenology",
+      "full_name": "High Energy Physics - Phenomenology",
+      "description": "Theoretical particle physics and its interrelation with experiment.",
+      "keywords": ["particle physics phenomenology", "standard model", "beyond standard model", "particle physics theory"],
+      "parent": "hep-ph"
+    },
+    "hep-th": {
+      "name": "High Energy Physics - Theory",
+      "full_name": "High Energy Physics - Theory",
+      "description": "Formal aspects of quantum field theory, string theory, supersymmetry and supergravity.",
+      "keywords": ["quantum field theory", "string theory", "supersymmetry", "supergravity", "theoretical physics"],
+      "parent": "hep-th"
+    },
+    "math-ph": {
+      "name": "Mathematical Physics",
+      "full_name": "Mathematical Physics",
+      "description": "Application of mathematics to problems in physics, mathematically rigorous formulations of physical theories.",
+      "keywords": ["mathematical physics", "quantum mechanics", "statistical mechanics", "mathematical methods in physics"],
+      "parent": "math-ph"
+    },
+    "nucl-ex": {
+      "name": "Nuclear Experiment",
+      "full_name": "Nuclear Experiment",
+      "description": "Results from experimental nuclear physics including fundamental interactions and relativistic heavy-ion collisions.",
+      "keywords": ["nuclear physics experiment", "nuclear structure", "heavy-ion collisions", "nuclear reactions"],
+      "parent": "nucl-ex"
+    },
+    "nucl-th": {
+      "name": "Nuclear Theory",
+      "full_name": "Nuclear Theory",
+      "description": "Theory of nuclear structure, nuclear equation of states, theory of nuclear reactions.",
+      "keywords": ["nuclear theory", "nuclear structure", "nuclear reactions", "nuclear matter"],
+      "parent": "nucl-th"
+    }
+  },
+  "hierarchy": {
+    "cs": {
+      "name": "Computer Science",
+      "children": ["cs.AI", "cs.AR", "cs.CC", "cs.CE", "cs.CG", "cs.CL", "cs.CR", "cs.CV", "cs.CY", "cs.DB", "cs.DC", "cs.DL", "cs.DM", "cs.DS", "cs.ET", "cs.FL", "cs.GL", "cs.GR", "cs.GT", "cs.HC", "cs.IR", "cs.IT", "cs.LG", "cs.LO", "cs.MA", "cs.MM", "cs.MS", "cs.NA", "cs.NE", "cs.NI", "cs.OH", "cs.OS", "cs.PF", "cs.PL", "cs.RO", "cs.SC", "cs.SD", "cs.SE", "cs.SI", "cs.SY"]
+    },
+    "eess": {
+      "name": "Electrical Engineering and Systems Science",
+      "children": ["eess.AS", "eess.IV", "eess.SP", "eess.SY"]
+    },
+    "stat": {
+      "name": "Statistics",
+      "children": ["stat.AP", "stat.CO", "stat.ME", "stat.ML", "stat.OT", "stat.TH"]
+    },
+    "math": {
+      "name": "Mathematics",
+      "children": ["math.AC", "math.AG", "math.AP", "math.AT", "math.CA", "math.CO", "math.CT", "math.CV", "math.DG", "math.DS", "math.FA", "math.GM", "math.GN", "math.GR", "math.GT", "math.HO", "math.IT", "math.KT", "math.LO", "math.MG", "math.MP", "math.NA", "math.NT", "math.OA", "math.OC", "math.PR", "math.QA", "math.RA", "math.RT", "math.SG", "math.SP", "math.ST"]
+    },
+    "physics": {
+      "name": "Physics",
+      "children": ["physics.acc-ph", "physics.ao-ph", "physics.app-ph", "physics.atm-clus", "physics.atom-ph", "physics.bio-ph", "physics.chem-ph", "physics.class-ph", "physics.comp-ph", "physics.data-an", "physics.ed-ph", "physics.flu-dyn", "physics.gen-ph", "physics.geo-ph", "physics.hist-ph", "physics.ins-det", "physics.med-ph", "physics.optics", "physics.plasm-ph", "physics.pop-ph", "physics.soc-ph", "physics.space-ph"]
+    },
+    "quant-ph": {
+      "name": "Quantum Physics",
+      "children": ["quant-ph"]
+    },
+    "q-bio": {
+      "name": "Quantitative Biology",
+      "children": ["q-bio.BM", "q-bio.CB", "q-bio.GN", "q-bio.MN", "q-bio.NC", "q-bio.OT", "q-bio.PE", "q-bio.QM", "q-bio.SC", "q-bio.TO"]
+    },
+    "econ": {
+      "name": "Economics",
+      "children": ["econ.EM", "econ.GN", "econ.TH"]
+    },
+    "q-fin": {
+      "name": "Quantitative Finance",
+      "children": ["q-fin.CP", "q-fin.EC", "q-fin.GN", "q-fin.MF", "q-fin.PM", "q-fin.PR", "q-fin.RM", "q-fin.ST", "q-fin.TR"]
+    },
+    "astro-ph": {
+      "name": "Astrophysics",
+      "children": ["astro-ph.CO", "astro-ph.EP", "astro-ph.GA", "astro-ph.HE", "astro-ph.IM", "astro-ph.SR"]
+    },
+    "cond-mat": {
+      "name": "Condensed Matter",
+      "children": ["cond-mat.dis-nn", "cond-mat.mes-hall", "cond-mat.mtrl-sci", "cond-mat.other", "cond-mat.quant-gas", "cond-mat.soft", "cond-mat.stat-mech", "cond-mat.str-el", "cond-mat.supr-con"]
+    },
+    "nlin": {
+      "name": "Nonlinear Sciences",
+      "children": ["nlin.AO", "nlin.CD", "nlin.CG", "nlin.PS", "nlin.SI"]
+    },
+    "gr-qc": {
+      "name": "General Relativity and Quantum Cosmology",
+      "children": ["gr-qc"]
+    },
+    "hep-ex": {
+      "name": "High Energy Physics - Experiment",
+      "children": ["hep-ex"]
+    },
+    "hep-lat": {
+      "name": "High Energy Physics - Lattice",
+      "children": ["hep-lat"]
+    },
+    "hep-ph": {
+      "name": "High Energy Physics - Phenomenology",
+      "children": ["hep-ph"]
+    },
+    "hep-th": {
+      "name": "High Energy Physics - Theory",
+      "children": ["hep-th"]
+    },
+    "math-ph": {
+      "name": "Mathematical Physics",
+      "children": ["math-ph"]
+    },
+    "nucl-ex": {
+      "name": "Nuclear Experiment",
+      "children": ["nucl-ex"]
+    },
+    "nucl-th": {
+      "name": "Nuclear Theory",
+      "children": ["nucl-th"]
+    }
+  },
+  "domain_mappings": {
+    "LLM": ["cs.CL", "cs.AI", "cs.LG"],
+    "language model": ["cs.CL", "cs.AI", "cs.LG"],
+    "NLP": ["cs.CL", "cs.AI"],
+    "natural language": ["cs.CL", "cs.AI"],
+    "computer vision": ["cs.CV", "cs.MM"],
+    "image": ["cs.CV", "eess.IV"],
+    "video": ["cs.CV", "eess.IV", "cs.MM"],
+    "multimodal": ["cs.CV", "cs.CL", "cs.MM"],
+    "vision-language": ["cs.CV", "cs.CL", "cs.MM"],
+    "agent": ["cs.AI", "cs.MA", "cs.RO"],
+    "multi-agent": ["cs.MA", "cs.AI", "cs.GT"],
+    "robotics": ["cs.RO", "cs.AI", "cs.SY"],
+    "robot": ["cs.RO", "cs.AI"],
+    "reinforcement learning": ["cs.LG", "cs.AI", "stat.ML"],
+    "RL": ["cs.LG", "cs.AI", "stat.ML"],
+    "machine learning": ["cs.LG", "stat.ML", "cs.AI"],
+    "deep learning": ["cs.LG", "stat.ML", "cs.CV", "cs.NE"],
+    "neural network": ["cs.LG", "cs.NE", "stat.ML"],
+    "optimization": ["math.OC", "cs.LG", "cs.NA"],
+    "inference": ["cs.CL", "cs.LG", "cs.AI"],
+    "efficient": ["cs.LG", "cs.PF", "cs.DC"],
+    "quantization": ["cs.LG", "eess.SP"],
+    "compression": ["cs.LG", "eess.SP", "cs.IT"],
+    "speech": ["cs.SD", "eess.AS", "cs.CL"],
+    "audio": ["cs.SD", "eess.AS", "cs.MM"],
+    "security": ["cs.CR", "cs.NI"],
+    "privacy": ["cs.CR", "cs.CY"],
+    "database": ["cs.DB", "cs.IR"],
+    "search": ["cs.IR", "cs.CL"],
+    "recommendation": ["cs.IR", "cs.AI"],
+    "graph": ["cs.SI", "cs.DS", "cs.LG"],
+    "GNN": ["cs.LG", "cs.SI"],
+    "quantum": ["quant-ph", "cs.ET"],
+    "quantum computing": ["quant-ph", "cs.ET"],
+    "bioinformatics": ["q-bio.GN", "q-bio.QM", "cs.LG"],
+    "genomics": ["q-bio.GN", "q-bio.BM"],
+    "neuroscience": ["q-bio.NC", "cs.NE"],
+    "finance": ["q-fin.GN", "q-fin.CP", "econ.GN"],
+    "economics": ["econ.GN", "econ.EM", "q-fin.EC"],
+    "astronomy": ["astro-ph.GA", "astro-ph.CO"],
+    "materials": ["cond-mat.mtrl-sci", "physics.app-ph"],
+    "superconductor": ["cond-mat.supr-con", "cond-mat.str-el"],
+    "game theory": ["cs.GT", "econ.TH", "cs.MA"],
+    "distributed": ["cs.DC", "cs.NI"],
+    "cloud": ["cs.DC", "cs.NI"],
+    "blockchain": ["cs.DC", "cs.CR"],
+    "IoT": ["cs.NI", "cs.SY"],
+    "HCI": ["cs.HC", "cs.MM"],
+    "VR": ["cs.HC", "cs.GR"],
+    "AR": ["cs.HC", "cs.CV", "cs.GR"],
+    "medical imaging": ["eess.IV", "physics.med-ph", "cs.CV"],
+    "time series": ["stat.AP", "cs.LG", "econ.EM"]
+  }
+}
