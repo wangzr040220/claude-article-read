@@ -16,7 +16,16 @@
 - 前三篇论文自动生成详细分析和提取图片
 - 自动链接关键词到已有笔记
 
-### 2. paper-analyze - 论文深度分析
+### 2. paper-hunt - 按需定向搜索论文
+- **自然语言输入**：用自然语言描述研究方向，如"帮我找 15 篇关于 LLM 推理优化的最新论文"
+- **关键词完全自定义**：不限于预设配置，每次搜索都可以指定不同的关键词
+- **数量手动指定**：每次搜索可指定不同的论文数量
+- **智能解析**：AI 自动解析搜索意图，推荐合适的 arXiv 分类
+- **用户确认机制**：搜索前显示解析结果，用户确认后执行
+- **智能笔记管理**：自动检测已有笔记，避免重复分析
+- **关键词自动链接**：将关键词自动转换为 wikilink，增强笔记关联性
+
+### 3. paper-analyze - 论文深度分析
 - 深度分析单篇论文
 - 生成结构化笔记，包含：
   - 摘要翻译和要点提炼
@@ -29,13 +38,13 @@
 - 自动提取论文图片并插入笔记
 - 更新知识图谱
 
-### 3. extract-paper-images - 论文图片提取
+### 4. extract-paper-images - 论文图片提取
 - 优先从 arXiv 源码包提取高质量图片
 - 支持从 PDF 提取图片作为备选
 - 自动生成图片索引
 - 保存到笔记目录的 images 子目录
 
-### 4. paper-search - 论文笔记搜索
+### 5. paper-search - 论文笔记搜索
 - 在已有笔记中搜索论文
 - 支持按标题、作者、关键词、领域搜索
 - 相关性评分排序
@@ -95,12 +104,14 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
    ```bash
    # Windows PowerShell
    Copy-Item -Recurse claude-article-read\start-my-day $env:USERPROFILE\.claude\skills\
+   Copy-Item -Recurse claude-article-read\paper-hunt $env:USERPROFILE\.claude\skills\
    Copy-Item -Recurse claude-article-read\paper-analyze $env:USERPROFILE\.claude\skills\
    Copy-Item -Recurse claude-article-read\extract-paper-images $env:USERPROFILE\.claude\skills\
    Copy-Item -Recurse claude-article-read\paper-search $env:USERPROFILE\.claude\skills\
 
    # macOS/Linux
    cp -r claude-article-read/start-my-day ~/.claude/skills/
+   cp -r claude-article-read/paper-hunt ~/.claude/skills/
    cp -r claude-article-read/paper-analyze ~/.claude/skills/
    cp -r claude-article-read/extract-paper-images ~/.claude/skills/
    cp -r claude-article-read/paper-search ~/.claude/skills/
@@ -220,6 +231,25 @@ start my day
 5. 提取论文图片并插入笔记
 6. 自动链接关键词到已有笔记
 
+### 按需定向搜索论文（paper-hunt）
+
+如果你想搜索特定方向的论文：
+
+```bash
+paper-hunt 帮我找 15 篇关于 LLM 推理优化的最新论文
+# 或
+paper-hunt 搜索 20 篇多模态大模型的论文
+# 或
+paper-hunt 找 10 篇过去一年的强化学习研究
+```
+
+这会：
+1. AI 智能解析你的搜索意图（关键词、分类、数量、时间范围）
+2. 显示解析结果让你确认
+3. 执行搜索并生成报告
+4. 对前 3 篇论文自动进行深度分析
+5. 自动链接关键词到已有笔记
+
 ### 分析单篇论文
 
 如果你想深入阅读某篇论文：
@@ -254,6 +284,7 @@ paper-search "关键词"
 claude-article-read/
 ├── README.md                 # 本文件
 ├── QUICKSTART.md             # 快速开始指南
+├── LICENSE                   # 许可证（PolyForm Noncommercial 1.0.0）
 ├── config.example.yaml       # 配置模板（需要复制并修改）
 ├── requirements.txt          # Python 依赖
 ├── start-my-day/             # 每日推荐技能
@@ -262,6 +293,12 @@ claude-article-read/
 │       ├── search_arxiv.py   # arXiv/Semantic Scholar 搜索脚本
 │       ├── scan_existing_notes.py  # 扫描现有笔记
 │       └── link_keywords.py  # 关键词自动链接脚本
+├── paper-hunt/               # 按需定向搜索技能
+│   ├── skill.md              # 技能定义文件
+│   └── scripts/
+│       ├── arxiv_categories.json      # arXiv 分类完整数据
+│       ├── arxiv_categories_simple.txt # arXiv 分类精简版
+│       └── lookup_category.py         # 分类查询脚本
 ├── paper-analyze/            # 论文分析技能
 │   ├── skill.md
 │   └── scripts/
@@ -376,7 +413,12 @@ python scripts/search_arxiv.py --top-n 15
 
 ## 许可证
 
-MIT License
+本项目采用 [PolyForm Noncommercial License 1.0.0](LICENSE) 许可证。
+
+- ✅ 允许：个人使用、学习、研究、教育机构、慈善组织
+- ❌ 禁止：任何形式的商业用途
+
+详见 [LICENSE](LICENSE) 文件或访问 https://polyformproject.org/licenses/noncommercial/1.0.0/
 
 ## 致谢
 

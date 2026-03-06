@@ -88,17 +88,19 @@ Copy-Item config.yaml "$env:OBSIDIAN_VAULT_PATH\99_System\Config\research_intere
 
 ### 2.4 将技能安装到 Claude Code
 
-将 claude-article-read 目录中的四个技能文件夹复制到你的 Claude Code skills 目录：
+将 claude-article-read 目录中的五个技能文件夹复制到你的 Claude Code skills 目录：
 
 ```bash
 # macOS/Linux
 cp -r claude-article-read/start-my-day ~/.claude/skills/
+cp -r claude-article-read/paper-hunt ~/.claude/skills/
 cp -r claude-article-read/paper-analyze ~/.claude/skills/
 cp -r claude-article-read/extract-paper-images ~/.claude/skills/
 cp -r claude-article-read/paper-search ~/.claude/skills/
 
 # Windows PowerShell
 Copy-Item -Recurse claude-article-read\start-my-day $env:USERPROFILE\.claude\skills\
+Copy-Item -Recurse claude-article-read\paper-hunt $env:USERPROFILE\.claude\skills\
 Copy-Item -Recurse claude-article-read\paper-analyze $env:USERPROFILE\.claude\skills\
 Copy-Item -Recurse claude-article-read\extract-paper-images $env:USERPROFILE\.claude\skills\
 Copy-Item -Recurse claude-article-read\paper-search $env:USERPROFILE\.claude\skills\
@@ -140,7 +142,15 @@ claude-code
 start my day
 ```
 
-### 3. 分析单篇论文
+### 3. 按需定向搜索论文
+
+如果你想搜索特定方向的论文：
+
+```
+paper-hunt 帮我找 15 篇关于 LLM 推理优化的最新论文
+```
+
+### 4. 分析单篇论文
 
 在 Claude Code 中输入：
 
