@@ -1,5 +1,7 @@
 # 快速开始指南
 
+[English](QUICKSTART_EN.md)
+
 这是使用 claude-article-read 的快速设置指南。
 
 ## 第一步：安装依赖

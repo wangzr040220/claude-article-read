@@ -256,7 +256,8 @@ paper-search "关键词"
 claude-article-read/
 ├── README.md                 # 英文文档
 ├── README_CN.md              # 中文文档（本文件）
-├── QUICKSTART.md             # 快速开始指南
+├── QUICKSTART.md             # 快速开始指南（中文）
+├── QUICKSTART_EN.md          # 快速开始指南（英文）
 ├── LICENSE                   # 许可证（PolyForm Noncommercial 1.0.0）
 ├── config.example.yaml       # 配置模板（需要复制并修改）
 ├── requirements.txt          # Python 依赖
