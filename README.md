@@ -189,7 +189,7 @@ python scripts/update_graph.py --vault "/your/obsidian/vault" --paper-id "2402.1
 ```
 你的Vault/
 ├── 10_Daily/                    # 每日推荐笔记（自动创建）
-│   └── YYYY-MM-DD论文推荐.md
+│   └── YYYY-MM-DD-HH-mm论文推荐.md  # 包含时分，支持一天多次搜索
 ├── 20_Research/
 │   └── Papers/                  # 论文详细笔记目录
 │       ├── 大模型/

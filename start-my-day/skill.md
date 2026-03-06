@@ -156,7 +156,7 @@ cat arxiv_filtered.json
 ### 4.2 创建推荐笔记文件
 
 1. **创建推荐笔记文件**
-   - 文件名：`10_Daily/YYYY-MM-DD论文推荐.md`
+   - 文件名：`10_Daily/YYYY-MM-DD-HH-mm论文推荐.md`（包含时分，支持一天多次搜索）
    - 必须包含属性：
      - `keywords`: 当天推荐论文的关键词（逗号分隔，从论文标题和摘要中提取）
      - `tags`: ["llm-generated", "daily-paper-recommend"]
@@ -334,8 +334,8 @@ python scripts/scan_existing_notes.py \
 # 步骤3：链接关键词（新增步骤）
 python scripts/link_keywords.py \
   --index existing_notes_index.json \
-  --input 10_Daily/YYYY-MM-DD论文推荐.md \
-  --output 10_Daily/YYYY-MM-DD论文推荐_linked.md
+  --input 10_Daily/YYYY-MM-DD-HH-mm论文推荐.md \
+  --output 10_Daily/YYYY-MM-DD-HH-mm论文推荐_linked.md
 ```
 
 **注意**：
@@ -347,7 +347,7 @@ python scripts/link_keywords.py \
 
 - **搜索范围扩大**：搜索近一个月 + 近一年热门论文
 - **综合推荐评分**：结合相关性、新近性、热门度、质量四个维度
-- **文件名以日期**：保持 `10_Daily/YYYY-MM-DD论文推荐.md` 格式
+- **文件名以日期时间**：保持 `10_Daily/YYYY-MM-DD-HH-mm论文推荐.md` 格式（支持一天多次搜索）
 - **添加今日概览**：在推荐笔记开头添加"## 今日概览"部分，总结今日论文的主要研究方向、总体趋势、质量分布、研究热点和阅读建议
 - **按评分排序**：所有论文按推荐评分从高到低排列
 - **前3篇特殊处理**：
@@ -441,7 +441,7 @@ python scripts/link_keywords.py \
    - 每篇论文包含：ID、标题、作者、摘要、评分、匹配领域
 
 5. **生成推荐笔记（包含关键词链接）**
-   - 创建 `10_Daily/YYYY-MM-DD论文推荐.md`（使用目标日期）
+   - 创建 `10_Daily/YYYY-MM-DD-HH-mm论文推荐.md`（使用当前日期时间）
    - **按评分排序**：所有论文按推荐评分从高到低排列
    - **前3篇特殊处理**：
      - 论文名称用 wikilink 格式：`[[论文名字]]`
@@ -604,8 +604,8 @@ python scripts/scan_existing_notes.py \
 # 步骤3：链接关键词（新增步骤）
 python scripts/link_keywords.py \
   --index existing_notes_index.json \
-  --input 10_Daily/YYYY-MM-DD论文推荐.md \
-  --output 10_Daily/YYYY-MM-DD论文推荐_linked.md
+  --input 10_Daily/YYYY-MM-DD-HH-mm论文推荐.md \
+  --output 10_Daily/YYYY-MM-DD-HH-mm论文推荐_linked.md
 ```
 
 **关键特性**：
@@ -649,8 +649,8 @@ python scripts/scan_existing_notes.py \
 # 步骤3：链接关键词（新增步骤）
 python scripts/link_keywords.py \
   --index existing_notes_index.json \
-  --input 10_Daily/YYYY-MM-DD论文推荐.md \
-  --output 10_Daily/YYYY-MM-DD论文推荐_linked.md
+  --input 10_Daily/YYYY-MM-DD-HH-mm论文推荐.md \
+  --output 10_Daily/YYYY-MM-DD-HH-mm论文推荐_linked.md
 ```
 
 **关键特性**：

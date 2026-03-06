@@ -194,7 +194,7 @@ python3 scripts/search_arxiv.py \
 
 ```markdown
 ---
-date: "YYYY-MM-DD"
+date: "YYYY-MM-DD HH:mm"
 keywords: [关键词1, 关键词2, ...]
 tags: ["llm-generated", "paper-hunt"]
 search_params:
@@ -276,7 +276,7 @@ python scripts/link_keywords.py \
 
 ### 6.4 保存报告
 
-将报告保存到：`$OBSIDIAN_VAULT_PATH/10_Daily/YYYY-MM-DD论文搜索-[主题].md`
+将报告保存到：`$OBSIDIAN_VAULT_PATH/10_Daily/YYYY-MM-DD-HH-mm论文搜索-[主题].md`（包含时分，支持一天多次搜索）
 
 ## 步骤7：深度分析
 
