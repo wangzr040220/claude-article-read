@@ -2,27 +2,7 @@
 
 这是使用 claude-article-read 的快速设置指南。
 
-## 方法一：自动安装（推荐）
-
-我们提供了自动安装脚本，可以自动完成所有配置：
-
-**macOS / Linux:**
-```bash
-chmod +x install.sh
-./install.sh
-```
-
-**Windows PowerShell:**
-```powershell
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-.\install.ps1
-```
-
-安装完成后，直接跳到[开始使用](#开始使用)部分。
-
-## 方法二：手动安装
-
-### 第一步：安装依赖
+## 第一步：安装依赖
 
 在终端运行：
 

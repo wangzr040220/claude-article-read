@@ -51,33 +51,8 @@
 
 ## 安装
 
-### 快速安装（推荐）
-
-我们提供了自动安装脚本，可以自动检测系统环境并完成安装：
-
-**macOS / Linux:**
-```bash
-chmod +x install.sh
-./install.sh
-```
-
-**Windows PowerShell:**
-```powershell
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-.\install.ps1
-```
-
-安装脚本会自动：
-- 检测操作系统和 Python 环境
-- 安装 Python 依赖（自动处理 PEP 668 限制）
-- 设置 `OBSIDIAN_VAULT_PATH` 环境变量
-- 创建 Obsidian 目录结构
-- 复制技能到 Claude Code 目录
-
-### 手动安装
-
 <details>
-<summary>点击展开手动安装步骤</summary>
+<summary>点击展开安装步骤</summary>
 
 #### 前置要求
 
