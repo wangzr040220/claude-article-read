@@ -1,81 +1,80 @@
 # claude-article-read
 
-> 在 Claude Code 中直接进行交互式论文搜索、推荐、分析和整理
+[中文文档](README_CN.md)
 
-## 简介
+> Interactive paper search, recommendation, analysis, and organization directly in Claude Code
 
-这是一套 Claude Code 技能（Skills）集合，用于自动化研究论文的搜索、推荐、分析和整理工作流。通过调用 arXiv 和 Semantic Scholar API，每天为你推荐高质量论文，并自动生成详细笔记和关系图谱。
+## Introduction
 
-## 功能特点
+This is a collection of Claude Code Skills for automating the workflow of searching, recommending, analyzing, and organizing research papers. By calling arXiv and Semantic Scholar APIs, it recommends high-quality papers daily and automatically generates detailed notes and relationship graphs.
 
-### 1. start-my-day - 每日论文推荐
-- 从 arXiv 搜索最近一个月的论文
-- 从 Semantic Scholar 搜索过去一年的高热度论文
-- 基于相关性、新近性、热门度、质量四个维度综合评分
-- 自动生成今日概览和推荐列表
-- 前三篇论文自动生成详细分析和提取图片
-- 自动链接关键词到已有笔记
+## Features
 
-### 2. paper-hunt - 按需定向搜索论文
-- **自然语言输入**：用自然语言描述研究方向，如"帮我找 15 篇关于 LLM 推理优化的最新论文"
-- **关键词完全自定义**：不限于预设配置，每次搜索都可以指定不同的关键词
-- **数量手动指定**：每次搜索可指定不同的论文数量
-- **智能解析**：AI 自动解析搜索意图，推荐合适的 arXiv 分类
-- **用户确认机制**：搜索前显示解析结果，用户确认后执行
-- **智能笔记管理**：自动检测已有笔记，避免重复分析
-- **关键词自动链接**：将关键词自动转换为 wikilink，增强笔记关联性
+### 1. start-my-day - Daily Paper Recommendation
+- Search papers from arXiv for the last month
+- Search high-popularity papers from Semantic Scholar for the past year
+- Comprehensive scoring based on four dimensions: relevance, recency, popularity, and quality
+- Auto-generate daily overview and recommendation list
+- Auto-generate detailed analysis and extract images for top 3 papers
+- Auto-link keywords to existing notes
 
-### 3. paper-analyze - 论文深度分析
-- 深度分析单篇论文
-- 生成结构化笔记，包含：
-  - 摘要翻译和要点提炼
-  - 研究背景与动机
-  - 方法概述和架构
-  - 实验结果分析
-  - 研究价值评估
-  - 优势和局限性分析
-  - 与相关论文对比
-- 自动提取论文图片并插入笔记
-- 更新知识图谱
+### 2. paper-hunt - On-Demand Targeted Paper Search
+- **Natural Language Input**: Describe your research direction in natural language, e.g., "Find 15 recent papers about LLM inference optimization"
+- **Fully Customizable Keywords**: Not limited to preset configurations, specify different keywords each time
+- **Manual Quantity Specification**: Specify different paper quantities for each search
+- **Intelligent Parsing**: AI automatically parses search intent and recommends appropriate arXiv categories
+- **User Confirmation Mechanism**: Display parsed results before search, execute after user confirmation
+- **Smart Note Management**: Automatically detect existing notes to avoid duplicate analysis
+- **Auto Keyword Linking**: Automatically convert keywords to wikilinks for enhanced note connectivity
 
-### 4. extract-paper-images - 论文图片提取
-- 优先从 arXiv 源码包提取高质量图片
-- 支持从 PDF 提取图片作为备选
-- 自动生成图片索引
-- 保存到笔记目录的 images 子目录
+### 3. paper-analyze - Deep Paper Analysis
+- Deep analysis of single paper
+- Generate structured notes including:
+  - Abstract translation and key points extraction
+  - Research background and motivation
+  - Method overview and architecture
+  - Experimental results analysis
+  - Research value assessment
+  - Advantages and limitations analysis
+  - Comparison with related papers
+- Auto-extract paper images and insert into notes
+- Update knowledge graph
 
-### 5. paper-search - 论文笔记搜索
-- 在已有笔记中搜索论文
-- 支持按标题、作者、关键词、领域搜索
-- 相关性评分排序
+### 4. extract-paper-images - Paper Image Extraction
+- Prioritize extracting high-quality images from arXiv source packages
+- Support extracting images from PDF as fallback
+- Auto-generate image index
+- Save to images subdirectory in notes directory
 
-## 安装
+### 5. paper-search - Paper Note Search
+- Search papers in existing notes
+- Support search by title, author, keywords, domain
+- Relevance score sorting
 
-<details>
-<summary>点击展开安装步骤</summary>
+## Installation
 
-#### 前置要求
+### Prerequisites
 
-1. **Claude Code CLI** - 需要安装并配置 Claude Code
-2. **Python 3.8+** - 用于运行搜索和分析脚本
-3. **依赖库**：
+1. **Claude Code CLI** - Need to install and configure Claude Code
+2. **Python 3.8+** - For running search and analysis scripts
+3. **Dependencies**:
    ```bash
-   # 普通安装
+   # Normal installation
    pip install -r requirements.txt
    
-   # 如果遇到 PEP 668 错误（macOS Homebrew Python），使用：
+   # If encountering PEP 668 error (macOS Homebrew Python), use:
    pip install --break-system-packages -r requirements.txt
    
-   # 或者使用虚拟环境（推荐）
+   # Or use virtual environment (recommended)
    python3 -m venv .venv
    source .venv/bin/activate  # macOS/Linux
    # .venv\Scripts\activate  # Windows
    pip install -r requirements.txt
    ```
 
-#### 安装步骤
+### Installation Steps
 
-1. 将此仓库克隆或复制到你的 Claude Code skills 目录：
+1. Clone or copy this repository to your Claude Code skills directory:
    ```bash
    # Windows PowerShell
    Copy-Item -Recurse claude-article-read\start-my-day $env:USERPROFILE\.claude\skills\
@@ -92,48 +91,46 @@
    cp -r claude-article-read/paper-search ~/.claude/skills/
    ```
 
-2. 配置环境变量和路径（见下文"配置"部分）
+2. Configure environment variables and paths (see "Configuration" section below)
 
-3. 重启 Claude Code CLI
+3. Restart Claude Code CLI
 
-</details>
+## Configuration
 
-## 配置
+> **Strongly recommended**: Read [QUICKSTART.md](QUICKSTART.md) for quick setup.
 
-> **强烈建议**：先阅读 [QUICKSTART.md](QUICKSTART.md) 快速完成设置。
+### Step 1: Set Environment Variables (Recommended)
 
-### 步骤1：设置环境变量（推荐）
-
-所有脚本统一通过 `OBSIDIAN_VAULT_PATH` 环境变量读取 Obsidian Vault 路径，这是最简单的配置方式：
+All scripts read Obsidian Vault path through `OBSIDIAN_VAULT_PATH` environment variable, this is the simplest configuration method:
 
 ```bash
-# Windows PowerShell（临时生效）
+# Windows PowerShell (temporary)
 $env:OBSIDIAN_VAULT_PATH = "C:/Users/YourName/Documents/Obsidian Vault"
 
-# Windows PowerShell（永久生效）
+# Windows PowerShell (permanent)
 [System.Environment]::SetEnvironmentVariable("OBSIDIAN_VAULT_PATH", "C:/Users/YourName/Documents/Obsidian Vault", "User")
 
-# macOS/Linux（添加到 ~/.bashrc 或 ~/.zshrc）
+# macOS/Linux (add to ~/.bashrc or ~/.zshrc)
 export OBSIDIAN_VAULT_PATH="/Users/yourname/Documents/Obsidian Vault"
 ```
 
-设置环境变量后，**无需修改任何脚本中的路径**。
+After setting the environment variable, **no need to modify any paths in scripts**.
 
-### 步骤2：创建配置文件
+### Step 2: Create Configuration File
 
-复制 `config.example.yaml` 并修改：
+Copy `config.example.yaml` and modify:
 
 ```bash
 cp config.example.yaml config.yaml
 ```
 
-编辑 `config.yaml`，根据你的研究兴趣修改关键词：
+Edit `config.yaml`, modify keywords according to your research interests:
 
 ```yaml
 vault_path: "/path/to/your/obsidian/vault"
 
 research_domains:
-  "你的研究领域1":
+  "Your Research Domain 1":
     keywords:
       - "keyword1"
       - "keyword2"
@@ -142,262 +139,263 @@ research_domains:
       - "cs.LG"
 ```
 
-然后将修改后的 `config.yaml` 复制到 Vault 中：
+Then copy the modified `config.yaml` to Vault:
 ```bash
 cp config.yaml "$OBSIDIAN_VAULT_PATH/99_System/Config/research_interests.yaml"
 ```
 
-### 步骤3（可选）：通过 CLI 参数覆盖路径
+### Step 3 (Optional): Override Path via CLI Parameters
 
-如果不想设置环境变量，也可以在每次调用脚本时通过参数指定路径：
+If you don't want to set environment variables, you can also specify paths through parameters when calling scripts:
 
 ```bash
 python scripts/search_arxiv.py --config "/your/path/research_interests.yaml"
 python scripts/scan_existing_notes.py --vault "/your/obsidian/vault"
-python scripts/generate_note.py --vault "/your/obsidian/vault" --paper-id "2402.12345" --title "Paper Title" --authors "Author" --domain "大模型"
-python scripts/update_graph.py --vault "/your/obsidian/vault" --paper-id "2402.12345" --title "Paper Title" --domain "大模型"
+python scripts/generate_note.py --vault "/your/obsidian/vault" --paper-id "2402.12345" --title "Paper Title" --authors "Author" --domain "Domain"
+python scripts/update_graph.py --vault "/your/obsidian/vault" --paper-id "2402.12345" --title "Paper Title" --domain "Domain"
 ```
 
-### 路径格式说明
+### Path Format Notes
 
-- **Windows**：可以使用正斜杠 `/` 或双反斜杠 `\\`
-  - 正确：`C:/Users/Name/Documents/Vault`
-  - 正确：`C:\\Users\\Name\\Documents\\Vault`
-  - 错误：`C:\Users\Name\Documents\Vault`（单反斜杠在 Python 字符串中需要转义）
+- **Windows**: Can use forward slash `/` or double backslash `\\`
+  - Correct: `C:/Users/Name/Documents/Vault`
+  - Correct: `C:\\Users\\Name\\Documents\\Vault`
+  - Wrong: `C:\Users\Name\Documents\Vault` (single backslash needs escaping in Python strings)
 
-- **macOS/Linux**：使用正斜杠 `/`
-  - 正确：`/Users/name/Documents/Vault`
+- **macOS/Linux**: Use forward slash `/`
+  - Correct: `/Users/name/Documents/Vault`
 
-### Obsidian 目录结构要求
+### Obsidian Directory Structure Requirements
 
-你的 Obsidian Vault 需要包含以下目录结构：
+Your Obsidian Vault needs to contain the following directory structure:
 
 ```
-你的Vault/
-├── 10_Daily/                    # 每日推荐笔记（自动创建）
-│   └── YYYY-MM-DD-HH-mm论文推荐.md  # 包含时分，支持一天多次搜索
+YourVault/
+├── 10_Daily/                    # Daily recommendation notes (auto-created)
+│   └── YYYY-MM-DD-HH-mm-paper-recommendation.md  # Includes time, supports multiple searches per day
 ├── 20_Research/
-│   └── Papers/                  # 论文详细笔记目录
-│       ├── 大模型/
-│       │   └── 论文标题.md
-│       │       └── images/      # 论文图片
-│       ├── 多模态技术/
-│       └── 智能体/
+│   └── Papers/                  # Paper detailed notes directory
+│       ├── Domain1/
+│       │   └── Paper-Title.md
+│       │       └── images/      # Paper images
+│       ├── Domain2/
+│       └── Domain3/
 └── 99_System/
     └── Config/
-        └── research_interests.yaml  # 研究兴趣配置（复制 config.yaml 到这里）
+        └── research_interests.yaml  # Research interests config (copy config.yaml here)
 ```
 
-## 使用方法
+## Usage
 
-### 开始每天的论文推荐
+### Start Daily Paper Recommendation
 
-在你的 Obsidian Vault 目录下打开终端，输入：
+Open terminal in your Obsidian Vault directory and enter:
 
 ```bash
 start my day
 ```
 
-这会：
-1. 搜索最近一个月和过去一年的高质量论文
-2. 根据你的研究兴趣筛选和评分
-3. 生成今日推荐笔记（保存到 `10_Daily/` 目录）
-4. 对前三篇论文自动生成详细分析
-5. 提取论文图片并插入笔记
-6. 自动链接关键词到已有笔记
+This will:
+1. Search high-quality papers from the last month and past year
+2. Filter and score based on your research interests
+3. Generate daily recommendation note (saved to `10_Daily/` directory)
+4. Auto-generate detailed analysis for top 3 papers
+5. Extract paper images and insert into notes
+6. Auto-link keywords to existing notes
 
-### 按需定向搜索论文（paper-hunt）
+### On-Demand Targeted Paper Search (paper-hunt)
 
-如果你想搜索特定方向的论文：
+If you want to search papers in a specific direction:
 
 ```bash
-paper-hunt 帮我找 15 篇关于 LLM 推理优化的最新论文
-# 或
-paper-hunt 搜索 20 篇多模态大模型的论文
-# 或
-paper-hunt 找 10 篇过去一年的强化学习研究
+paper-hunt Find 15 recent papers about LLM inference optimization
+# or
+paper-hunt Search 20 papers about multimodal large models
+# or
+paper-hunt Find 10 papers about reinforcement learning from the past year
 ```
 
-这会：
-1. AI 智能解析你的搜索意图（关键词、分类、数量、时间范围）
-2. 显示解析结果让你确认
-3. 执行搜索并生成报告
-4. 对前 3 篇论文自动进行深度分析
-5. 自动链接关键词到已有笔记
+This will:
+1. AI intelligently parses your search intent (keywords, categories, quantity, time range)
+2. Display parsed results for your confirmation
+3. Execute search and generate report
+4. Auto deep analysis for top 3 papers
+5. Auto-link keywords to existing notes
 
-### 分析单篇论文
+### Analyze Single Paper
 
-如果你想深入阅读某篇论文：
+If you want to read a paper in depth:
 
 ```bash
 paper-analyze 2602.12345
-# 或使用论文标题
-paper-analyze "论文标题"
+# or use paper title
+paper-analyze "Paper Title"
 ```
 
-这会：
-1. 下载论文 PDF
-2. 提取图片
-3. 生成详细的分析笔记
-4. 更新知识图谱
+This will:
+1. Download paper PDF
+2. Extract images
+3. Generate detailed analysis notes
+4. Update knowledge graph
 
-### 提取论文图片
+### Extract Paper Images
 
 ```bash
 extract-paper-images 2602.12345
 ```
 
-### 搜索已有论文
+### Search Existing Papers
 
 ```bash
-paper-search "关键词"
+paper-search "keyword"
 ```
 
-## 目录结构
+## Directory Structure
 
 ```
 claude-article-read/
-├── README.md                 # 本文件
-├── QUICKSTART.md             # 快速开始指南
-├── LICENSE                   # 许可证（PolyForm Noncommercial 1.0.0）
-├── config.example.yaml       # 配置模板（需要复制并修改）
-├── requirements.txt          # Python 依赖
-├── start-my-day/             # 每日推荐技能
-│   ├── skill.md              # 技能定义文件
+├── README.md                 # This file
+├── README_CN.md              # Chinese documentation
+├── QUICKSTART.md             # Quick start guide
+├── LICENSE                   # License (PolyForm Noncommercial 1.0.0)
+├── config.example.yaml       # Configuration template (copy and modify)
+├── requirements.txt          # Python dependencies
+├── start-my-day/             # Daily recommendation skill
+│   ├── skill.md              # Skill definition file
 │   └── scripts/
-│       ├── search_arxiv.py   # arXiv/Semantic Scholar 搜索脚本
-│       ├── scan_existing_notes.py  # 扫描现有笔记
-│       └── link_keywords.py  # 关键词自动链接脚本
-├── paper-hunt/               # 按需定向搜索技能
-│   ├── skill.md              # 技能定义文件
+│       ├── search_arxiv.py   # arXiv/Semantic Scholar search script
+│       ├── scan_existing_notes.py  # Scan existing notes
+│       └── link_keywords.py  # Keyword auto-link script
+├── paper-hunt/               # On-demand targeted search skill
+│   ├── skill.md              # Skill definition file
 │   └── scripts/
-│       ├── arxiv_categories.json      # arXiv 分类完整数据
-│       ├── arxiv_categories_simple.txt # arXiv 分类精简版
-│       └── lookup_category.py         # 分类查询脚本
-├── paper-analyze/            # 论文分析技能
+│       ├── arxiv_categories.json      # arXiv categories complete data
+│       ├── arxiv_categories_simple.txt # arXiv categories simplified
+│       └── lookup_category.py         # Category lookup script
+├── paper-analyze/            # Paper analysis skill
 │   ├── skill.md
 │   └── scripts/
-│       ├── generate_note.py  # 生成笔记模板
-│       └── update_graph.py   # 更新知识图谱
-├── extract-paper-images/     # 图片提取技能
+│       ├── generate_note.py  # Generate note template
+│       └── update_graph.py   # Update knowledge graph
+├── extract-paper-images/     # Image extraction skill
 │   ├── skill.md
 │   └── scripts/
-│       └── extract_images.py # 图片提取脚本
-└── paper-search/             # 论文搜索技能
+│       └── extract_images.py # Image extraction script
+└── paper-search/             # Paper search skill
     └── skill.md
 ```
 
-## 评分机制
+## Scoring Mechanism
 
-论文推荐评分基于四个维度：
+Paper recommendation scoring is based on four dimensions:
 
-| 维度 | 权重 | 说明 |
-|------|--------|------|
-| 相关性 | 40% | 与研究兴趣的匹配程度 |
-| 新近性 | 20% | 论文发布时间 |
-| 热门度 | 30% | 引用数/影响力 |
-| 质量 | 10% | 从摘要推断的方法质量 |
+| Dimension | Weight | Description |
+|-----------|--------|-------------|
+| Relevance | 40% | Match degree with research interests |
+| Recency | 20% | Paper publication time |
+| Popularity | 30% | Citation count/impact |
+| Quality | 10% | Method quality inferred from abstract |
 
-**评分细则**：
-- **相关性**：标题关键词匹配（+0.5/个）、摘要关键词匹配（+0.3/个）、类别匹配（+1.0）
-- **新近性**：30天内（+3）、30-90天（+2）、90-180天（+1）、180天以上（0）
-- **热门度**：高影响力引用 > 100（+3）、50-100（+2）、< 50（+1）
-- **质量**：多维度指标（强创新词 > 弱创新词 > 方法指标 > 量化结果 > 实验指标）
+**Scoring Rules**:
+- **Relevance**: Title keyword match (+0.5/each), abstract keyword match (+0.3/each), category match (+1.0)
+- **Recency**: Within 30 days (+3), 30-90 days (+2), 90-180 days (+1), 180+ days (0)
+- **Popularity**: High-impact citations > 100 (+3), 50-100 (+2), < 50 (+1)
+- **Quality**: Multi-dimensional indicators (strong innovation words > weak innovation words > method indicators > quantitative results > experimental indicators)
 
-## 常用 arXiv 分类
+## Common arXiv Categories
 
-| 分类代码 | 名称 | 说明 |
-|----------|------|------|
-| cs.AI | Artificial Intelligence | 人工智能 |
-| cs.LG | Learning | 机器学习 |
-| cs.CL | Computation and Language | 计算语言学/NLP |
-| cs.CV | Computer Vision | 计算机视觉 |
-| cs.MM | Multimedia | 多媒体 |
-| cs.MA | Multiagent Systems | 多智能体系统 |
-| cs.RO | Robotics | 机器人学 |
+| Category Code | Name | Description |
+|---------------|------|-------------|
+| cs.AI | Artificial Intelligence | AI |
+| cs.LG | Learning | Machine Learning |
+| cs.CL | Computation and Language | NLP |
+| cs.CV | Computer Vision | Computer Vision |
+| cs.MM | Multimedia | Multimedia |
+| cs.MA | Multiagent Systems | Multi-agent Systems |
+| cs.RO | Robotics | Robotics |
 
-## 常见问题
+## FAQ
 
-### Q: 搜索没有结果？
-A: 检查以下几点：
-1. 确认网络连接正常
-2. 检查配置文件中的关键词是否正确
-3. 尝试扩大搜索的 arXiv 分类范围
+### Q: No search results?
+A: Check the following:
+1. Confirm network connection is normal
+2. Check if keywords in configuration file are correct
+3. Try expanding arXiv category search range
 
-### Q: 图片提取失败？
+### Q: Image extraction failed?
 A:
-1. 确保安装了 PyMuPDF：`pip install PyMuPDF`
-2. 检查 arXiv ID 格式是否正确（如 2602.12345）
+1. Ensure PyMuPDF is installed: `pip install PyMuPDF`
+2. Check if arXiv ID format is correct (e.g., 2602.12345)
 
-### Q: 关键词自动链接不准确？
-A: 可以在 `start-my-day/scripts/link_keywords.py` 中修改 `COMMON_WORDS` 集合，添加你不需要自动链接的词
+### Q: Keyword auto-linking not accurate?
+A: You can modify `COMMON_WORDS` set in `start-my-day/scripts/link_keywords.py`, add words you don't want auto-linked
 
-### Q: "Papers directory not found" 错误？
+### Q: "Papers directory not found" error?
 A:
-1. 检查 `OBSIDIAN_VAULT_PATH` 环境变量是否正确设置
-2. 确认 Obsidian Vault 中的目录结构是否正确创建（20_Research/Papers/）
+1. Check if `OBSIDIAN_VAULT_PATH` environment variable is correctly set
+2. Confirm Obsidian Vault directory structure is correctly created (20_Research/Papers/)
 
-### Q: "未指定 vault 路径" 错误？
-A: 设置 `OBSIDIAN_VAULT_PATH` 环境变量，或在调用脚本时通过 `--vault` / `--config` 参数指定路径。
+### Q: "Vault path not specified" error?
+A: Set `OBSIDIAN_VAULT_PATH` environment variable, or specify path via `--vault` / `--config` parameter when calling scripts.
 
-## 高级配置
+## Advanced Configuration
 
-### 修改搜索的 arXiv 分类
+### Modify Search arXiv Categories
 
-在调用 `search_arxiv.py` 时通过 `--categories` 参数指定：
+Specify via `--categories` parameter when calling `search_arxiv.py`:
 
 ```bash
 python scripts/search_arxiv.py --categories "cs.AI,cs.LG,cs.CL,cs.CV"
 ```
 
-### 修改每天推荐的论文数量
+### Modify Daily Recommendation Paper Count
 
-在调用 `search_arxiv.py` 时通过 `--top-n` 参数指定：
+Specify via `--top-n` parameter when calling `search_arxiv.py`:
 
 ```bash
 python scripts/search_arxiv.py --top-n 15
 ```
 
-### 修改评分权重
+### Modify Scoring Weights
 
-在 `start-my-day/scripts/search_arxiv.py` 的 `calculate_recommendation_score` 函数中调整权重。
+Adjust weights in `calculate_recommendation_score` function in `start-my-day/scripts/search_arxiv.py`.
 
-## 工作原理
+## How It Works
 
 ```
-用户输入 "start my day"
+User inputs "start my day"
          ↓
-    1. 加载研究配置
-    2. 扫描现有笔记构建索引
+    1. Load research config
+    2. Scan existing notes to build index
          ↓
-    3. 搜索 arXiv（最近30天）
-    4. 搜索 Semantic Scholar（过去一年高热度）
+    3. Search arXiv (last 30 days)
+    4. Search Semantic Scholar (high popularity from past year)
          ↓
-    5. 合并结果并去重
-    6. 综合评分并排序
-    7. 取前 N 篇
+    5. Merge results and deduplicate
+    6. Comprehensive scoring and sorting
+    7. Take top N papers
          ↓
-    8. 生成今日推荐笔记
-    9. 前三篇生成详细分析
-    10. 自动链接关键词
+    8. Generate daily recommendation note
+    9. Generate detailed analysis for top 3
+    10. Auto-link keywords
 ```
 
-## 贡献
+## Contributing
 
-欢迎提交 Issue 和 Pull Request！
+Issues and Pull Requests are welcome!
 
-## 许可证
+## License
 
-本项目采用 [PolyForm Noncommercial License 1.0.0](LICENSE) 许可证。
+This project is licensed under the [PolyForm Noncommercial License 1.0.0](LICENSE).
 
-- ✅ 允许：个人使用、学习、研究、教育机构、慈善组织
-- ❌ 禁止：任何形式的商业用途
+- ✅ Allowed: Personal use, learning, research, educational institutions, charitable organizations
+- ❌ Prohibited: Any form of commercial use
 
-详见 [LICENSE](LICENSE) 文件或访问 https://polyformproject.org/licenses/noncommercial/1.0.0/
+See [LICENSE](LICENSE) file or visit https://polyformproject.org/licenses/noncommercial/1.0.0/
 
-## 致谢
+## Acknowledgments
 
-- [arXiv](https://arxiv.org/) - 开放获取的学术论文预印本平台
-- [Semantic Scholar](https://www.semanticscholar.org/) - AI 驱动的学术研究平台
-- [Claude Code](https://claude.ai/claude-code) - AI 辅助的代码和写作工具
-- [Obsidian](https://obsidian.md/) - 强大的知识管理工具
+- [arXiv](https://arxiv.org/) - Open access academic paper preprint platform
+- [Semantic Scholar](https://www.semanticscholar.org/) - AI-powered academic research platform
+- [Claude Code](https://claude.ai/claude-code) - AI-assisted code and writing tool
+- [Obsidian](https://obsidian.md/) - Powerful knowledge management tool
